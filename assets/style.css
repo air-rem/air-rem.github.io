@@ -366,3 +366,7 @@ table.cmp td.mono{font-family:var(--font-mono);color:var(--ink-2)}
   .rank-side .price{text-align:left}
   .hero-metrics{gap:22px}
 }
+
+.nav-links a.btn-primary{color:#241300}
+.nav-links a.btn-aurora{color:#05122a}
+.nav-links a.btn-ghost{color:var(--ink)}

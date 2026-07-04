@@ -388,6 +388,69 @@ def render_sitemap():
         % (u, today, cf, pr) for (u, pr, cf) in urls)
     return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">%s</urlset>\n' % items
 
+def render_readme():
+    A = B
+    L = []
+    L.append('<p align="center"><img src="assets/og.png" alt="AIRREM 领航 · 机场推荐榜" width="820"></p>')
+    L.append("")
+    L.append('<h1 align="center">AIRREM 领航 · 机场推荐榜</h1>')
+    L.append('<p align="center">独立的机场（科学上网）推荐与评测 · 按需求快速选对高速稳定机场<br>')
+    L.append('线上站点：<a href="%s/">air-rem.github.io</a></p>' % A)
+    L.append("")
+    L.append("---")
+    L.append("")
+    L.append("## 2026 精选机场榜单")
+    L.append("")
+    L.append("按「综合稳定性 + 性价比 + 场景适配」精选。价格 / 优惠码可能随官网调整，请以各机场官网为准。")
+    L.append("")
+    for i, a in enumerate(AIRPORTS):
+        title = a["name"] if a["en"] == a["name"] else "%s %s" % (a["name"], a["en"])
+        label = "  ·  " + ("「%s」" % a["rank_label"]) if a.get("rank_label") else ""
+        L.append("### %02d. %s%s" % (i + 1, title, label))
+        L.append("")
+        L.append('<img src="assets/og/%s.png" alt="%s" width="720">' % (a["slug"], title))
+        L.append("")
+        L.append("> %s" % a["tagline"])
+        L.append("")
+        L.append("- **线路类型**：%s" % a["type"])
+        L.append("- **主要协议**：%s" % " · ".join(a["protocols"]))
+        L.append("- **流媒体解锁**：%s" % " · ".join(a["unlock"]))
+        L.append("- **覆盖地区**：%s" % a["regions"])
+        L.append("- **起步价**：%s 起 %s（%s）" % (a["price_from"], a["price_unit"], a["billing"]))
+        L.append("- **最适合**：%s" % a["best_for"])
+        L.append("")
+        L.append(a["verdict"])
+        L.append("")
+        L.append("**完整评测 → %s/%s/**" % (A, a["slug"]))
+        L.append("")
+    L.append("## 快速对比")
+    L.append("")
+    L.append("| 机场 | 线路类型 | 主要协议 | 解锁 | 起步价 | 最适合 |")
+    L.append("| --- | --- | --- | --- | --- | --- |")
+    for a in AIRPORTS:
+        L.append("| [%s](%s/%s/) | %s | %s | %s | %s %s | %s |" % (
+            a["name"], A, a["slug"], a["type"], " · ".join(a["protocols"]),
+            " · ".join(a["unlock"]), a["price_from"], a["price_unit"], a["best_for"]))
+    L.append("")
+    L.append("## 30 秒教你怎么选")
+    L.append("")
+    for a in AIRPORTS:
+        if a.get("featured"):
+            L.append("- **%s** → 选 [%s](%s/%s/)" % (a["scene"], a["name"], A, a["slug"]))
+    L.append("")
+    L.append("## 新手小提示")
+    L.append("")
+    L.append("- 先买月付 / 小流量档验证稳定性，别一上来就大额年付。")
+    L.append("- 老牌机场更稳；新机场先小档试水。")
+    L.append("- 同时备用 2–3 家机场互为容灾，避免踩到跑路。")
+    L.append("- 新协议（如 Hysteria2）要用支持它的客户端，否则导入会报错。")
+    L.append("")
+    L.append("## 免责声明")
+    L.append("")
+    L.append("本仓库与站点为第三方信息与推荐平台，非任何机场官方；页面内含推广链接，若你通过链接注册或购买，我们可能获得一定佣金，但不会增加你的任何成本。各机场的线路、价格、优惠码可能随时变动，请以对应官网实时信息为准。代理 / 加密技术的使用需遵守你所在国家或地区的法律法规，本站内容仅供学习与技术研究参考。")
+    L.append("")
+    return "\n".join(L) + "\n"
+
 # ----------------------------------------------------------------------------- main
 def write(path, content):
     full = os.path.join(BASE, path)
@@ -401,6 +464,7 @@ def main():
         write("%s/index.html" % a["slug"], render_detail(a))
     write("airports/index.html", render_hub())
     write("sitemap.xml", render_sitemap())
+    write("README.md", render_readme())
     # inject homepage
     idx_path = os.path.join(BASE, "index.html")
     idx = open(idx_path, encoding="utf-8").read()
