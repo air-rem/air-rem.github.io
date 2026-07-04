@@ -69,7 +69,7 @@ def nav_html():
 
 def footer_html():
     links = "\n".join('<a href="/%s/">%s %s</a>' % (a["slug"], esc(a["name"]), esc(a["en"]))
-                      for a in AIRPORTS)
+                      for a in AIRPORTS if a.get("featured"))
     return (
 '<footer class="foot"><div class="wrap"><div class="foot-grid">'
 '<div><a class="brand" href="/" style="margin-bottom:14px">'
@@ -285,7 +285,7 @@ def render_detail(a):
 def render_hub():
     url = B + "/airports/"
     title = "机场大全｜全部科学上网机场推荐与评测榜单 · AIRREM 领航"
-    desc = "AIRREM 领航机场大全：汇总我们实测收录的全部机场（%s 等），按线路类型、协议、解锁能力与价格对比，点进各家看完整评测。持续更新。" % "、".join(a["name"] for a in AIRPORTS)
+    desc = "AIRREM 领航机场大全：汇总我们实测收录的全部机场（%s 等），按线路类型、协议、解锁能力与价格对比，点进各家看完整评测。持续更新。" % "、".join(a["name"] for a in AIRPORTS if a.get("featured"))
     cards = []
     for a in AIRPORTS:
         cards.append(
@@ -361,7 +361,7 @@ def render_pick():
 
 def render_compare():
     out = []
-    for a in AIRPORTS:
+    for a in [x for x in AIRPORTS if x.get("featured")]:
         out.append(
             '<tr><td class="name">%s</td><td>%s</td><td class="mono">%s</td><td>%s</td>'
             '<td class="mono">%s %s</td><td>%s</td><td><a class="chip cy" href="/%s/">评测 →</a></td></tr>'
@@ -372,7 +372,7 @@ def render_compare():
 
 def render_footer_airports():
     return "\n".join('<a href="/%s/">%s %s</a>' % (a["slug"], esc(a["name"]), esc(a["en"]))
-                     for a in AIRPORTS)
+                     for a in AIRPORTS if a.get("featured"))
 
 def inject(text, name, inner):
     pat = re.compile(r"(<!--GEN:%s:START-->).*?(<!--GEN:%s:END-->)" % (name, name), re.S)

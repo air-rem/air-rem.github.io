@@ -2,20 +2,67 @@
    AIRREM 领航 —— 推广位配置（唯一需要改动的文件）
    aff  : 各机场官网推广跳转链接（slug 为键）
    code : 优惠码（留空则页面自动隐藏优惠码框）
-   改完重新发布即可全站生效。
    ============================================================ */
 window.SITE = {
   aff: {
-    mitce:      "https://t.rtxk.us/t/ycfdvtk",   // Mitce 官网推广跳转
-    westdata:   "https://t.rtxk.us/t/x2m8qpb",   // 西部数据 官网推广跳转
-    candycloud: "https://t.rtxk.us/t/vubhdhq",   // 糖果云 官网推广跳转
-    hongxing:   "https://i.rtxk.us/i/mycugbg"    // 红杏云 官网推广跳转
+    "mitce": "https://t.rtxk.us/t/ycfdvtk",
+    "westdata": "https://t.rtxk.us/t/x2m8qpb",
+    "candycloud": "https://t.rtxk.us/t/vubhdhq",
+    "hongxing": "https://i.rtxk.us/i/mycugbg",
+    "niubi": "https://i.rtxk.us/i/ktcfmqn",
+    "liangxin": "https://t.rtxk.us/t/dedzags",
+    "shouhou": "https://s.rtxk.us/s/scm3m2j",
+    "yun69": "https://t.rtxk.us/t/fdr3mkg",
+    "qingfeng": "https://i.rtxk.us/i/nvynky7",
+    "ouo": "https://t.rtxk.us/t/s85fnp6",
+    "niceduck": "https://i.rtxk.us/i/nu95jmp",
+    "taoqitu": "https://t.rtxk.us/t/ywcc7ms",
+    "yuyun": "https://t.rtxk.us/t/txppfd7",
+    "shenlong": "https://i.rtxk.us/i/ayhb9d7",
+    "yifen": "https://i.rtxk.us/i/x67y75t",
+    "llguang": "https://s.rtxk.us/s/6pqsn8c",
+    "yousun": "https://s.rtxk.us/s/2fhtsh7",
+    "freecat": "https://t.rtxk.us/t/twfhqma",
+    "lingyun": "https://i.rtxk.us/i/utvdfdb",
+    "jisu": "https://i.rtxk.us/i/d3fvey6",
+    "feigou": "https://t.rtxk.us/t/gvn847t",
+    "xueshan": "https://s.rtxk.us/s/vvdrepn",
+    "hneko": "https://s.rtxk.us/s/bvaumhm",
+    "dingji": "https://s.rtxk.us/s/shk6g2s",
+    "peiqian": "https://s.rtxk.us/s/n9gmxan",
+    "juanwang": "https://i.rtxk.us/i/33zu397",
+    "danta": "https://t.rtxk.us/t/k67qxy6",
+    "chaoshihui": "https://s.rtxk.us/s/c5n9usc"
   },
   code: {
-    mitce:      "like20",     // Mitce 8折码（以官网为准）
-    westdata:   "",           // 西部数据 常年折扣，无固定码
-    candycloud: "Candytally", // 糖果云 6折码（以官网为准）
-    hongxing:   "lu88"        // 红杏云 8折码（以官网为准）
+    "mitce": "like20",
+    "candycloud": "Candytally",
+    "hongxing": "lu88",
+    "westdata": "",
+    "niubi": "",
+    "liangxin": "",
+    "shouhou": "",
+    "yun69": "",
+    "qingfeng": "",
+    "ouo": "",
+    "niceduck": "",
+    "taoqitu": "",
+    "yuyun": "",
+    "shenlong": "",
+    "yifen": "",
+    "llguang": "",
+    "yousun": "",
+    "freecat": "",
+    "lingyun": "",
+    "jisu": "",
+    "feigou": "",
+    "xueshan": "",
+    "hneko": "",
+    "dingji": "",
+    "peiqian": "",
+    "juanwang": "",
+    "danta": "",
+    "chaoshihui": ""
   }
 };
 
