@@ -370,3 +370,15 @@ table.cmp td.mono{font-family:var(--font-mono);color:var(--ink-2)}
 .nav-links a.btn-primary{color:#241300}
 .nav-links a.btn-aurora{color:#05122a}
 .nav-links a.btn-ghost{color:var(--ink)}
+
+/* ---------- 机场墙 marquee ---------- */
+.wall{overflow:hidden;padding:10px 0;-webkit-mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.wall-track{display:flex;gap:12px;width:max-content;animation:marq 72s linear infinite}
+.wall-track.rev{animation-direction:reverse;margin-top:12px}
+.wall:hover .wall-track{animation-play-state:paused}
+@keyframes marq{to{transform:translateX(-50%)}}
+.wall-chip{display:inline-flex;align-items:center;gap:9px;padding:7px 15px 7px 7px;border-radius:999px;border:1px solid var(--brd);background:var(--panel);white-space:nowrap;transition:.18s;color:var(--ink)}
+.wall-chip:hover{border-color:var(--brd-2);background:var(--panel-2);transform:translateY(-2px)}
+.wall-chip svg{width:26px;height:26px;flex:none}
+.wall-chip span{font-family:var(--font-display);font-weight:600;font-size:14px}
+@media (prefers-reduced-motion:reduce){.wall-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}.wall{-webkit-mask:none;mask:none}}

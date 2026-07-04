@@ -388,6 +388,16 @@ def render_sitemap():
         % (u, today, cf, pr) for (u, pr, cf) in urls)
     return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">%s</urlset>\n' % items
 
+def render_wall():
+    chips = "".join('<a class="wall-chip" href="/%s/">%s<span>%s</span></a>' % (a["slug"], emblem(a, 26), esc(a["name"])) for a in AIRPORTS)
+    n = len(AIRPORTS)
+    return ('<section class="section-sm"><div class="wrap center">'
+            '<span class="eyebrow center">机场墙 · 持续增加</span>'
+            '<h2 style="font-size:clamp(22px,3.2vw,34px)">已收录 <span class="grad-text">%d</span> 家机场，一站挑齐</h2>'
+            '<p class="muted" style="max-width:52ch;margin:12px auto 0">从老牌 IEPL 专线到平价大流量，点任意一家看完整评测与最新价格。</p>'
+            '</div><div class="wall"><div class="wall-track">%s%s</div>'
+            '<div class="wall-track rev">%s%s</div></div></section>') % (n, chips, chips, chips, chips)
+
 def render_readme():
     A = B
     L = []
@@ -470,6 +480,7 @@ def main():
     idx = inject(idx, "BOARD", render_board())
     idx = inject(idx, "PICK", render_pick())
     idx = inject(idx, "COMPARE", render_compare())
+    idx = inject(idx, "WALL", render_wall())
     idx = inject(idx, "FOOTER_AIRPORTS", render_footer_airports())
     open(idx_path, "w", encoding="utf-8").write(idx)
     print("  ✓ index.html (injected)")
