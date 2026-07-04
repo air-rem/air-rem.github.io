@@ -8,12 +8,14 @@ window.SITE = {
   aff: {
     mitce:      "https://t.rtxk.us/t/ycfdvtk",   // Mitce 官网推广跳转
     westdata:   "https://t.rtxk.us/t/x2m8qpb",   // 西部数据 官网推广跳转
-    candycloud: "https://t.rtxk.us/t/vubhdhq"    // 糖果云 官网推广跳转
+    candycloud: "https://t.rtxk.us/t/vubhdhq",   // 糖果云 官网推广跳转
+    hongxing:   "https://i.rtxk.us/i/mycugbg"    // 红杏云 官网推广跳转
   },
   code: {
     mitce:      "like20",     // Mitce 8折码（以官网为准）
     westdata:   "",           // 西部数据 常年折扣，无固定码
-    candycloud: "Candytally"  // 糖果云 6折码（以官网为准）
+    candycloud: "Candytally", // 糖果云 6折码（以官网为准）
+    hongxing:   "lu88"        // 红杏云 8折码（以官网为准）
   }
 };
 

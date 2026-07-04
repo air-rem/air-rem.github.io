@@ -465,11 +465,16 @@ def main():
     write("airports/index.html", render_hub())
     write("sitemap.xml", render_sitemap())
     write("README.md", render_readme())
-    # inject homepage
     idx_path = os.path.join(BASE, "index.html")
     idx = open(idx_path, encoding="utf-8").read()
     idx = inject(idx, "BOARD", render_board())
     idx = inject(idx, "PICK", render_pick())
     idx = inject(idx, "COMPARE", render_compare())
     idx = inject(idx, "FOOTER_AIRPORTS", render_footer_airports())
-    open
+    open(idx_path, "w", encoding="utf-8").write(idx)
+    print("  ✓ index.html (injected)")
+    print("Done.")
+
+
+if __name__ == "__main__":
+    main()

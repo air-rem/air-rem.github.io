@@ -61,6 +61,23 @@
 
 **完整评测 → https://air-rem.github.io/candycloud/**
 
+### 04. 红杏云 HongXing  ·  「流媒体之选」
+
+<img src="assets/og/hongxing.png" alt="红杏云 HongXing" width="720">
+
+> 糖果云的母站，公网隧道中转 + 全流媒体解锁，还赠送 Emby 影视库，20 元 200G 的高性价比之选。
+
+- **线路类型**：公网隧道中转
+- **主要协议**：Trojan · Hysteria2
+- **流媒体解锁**：Netflix · Disney+ · ChatGPT · Emby 影视库
+- **覆盖地区**：香港 · 日本 · 台湾 · 新加坡 · 美国 等
+- **起步价**：¥20 起 / 200G（包月 / 季付）
+- **最适合**：流媒体 / 性价比
+
+2024 年新站，把资源砸在流媒体解锁上：Netflix / Disney+ / ChatGPT 全解、4K 秒播、还赠送 Emby 影视库，价格也便宜。想要 IEPL 专线要去它的分站糖果云；新站建议先月付小额验证晚高峰。
+
+**完整评测 → https://air-rem.github.io/hongxing/**
+
 ## 快速对比
 
 | 机场 | 线路类型 | 主要协议 | 解锁 | 起步价 | 最适合 |
@@ -68,12 +85,14 @@
 | [西部数据](https://air-rem.github.io/westdata/) | IEPL/IPLC 全专线 | Trojan | Netflix · Disney+ · ChatGPT | ¥17 / 200G | 稳定专线党 |
 | [Mitce](https://air-rem.github.io/mitce/) | 直连（部分 BGP 中转） | VLESS+Reality · Hysteria2 | Netflix · Disney+ · ChatGPT | ¥4 / 100G | 性价比 / 新手 |
 | [糖果云](https://air-rem.github.io/candycloud/) | IEPL 专线 | Shadowsocks · V2Ray | Netflix · ChatGPT · Emby 影视库 | ¥28 / 100G | 影视 / 追剧 |
+| [红杏云](https://air-rem.github.io/hongxing/) | 公网隧道中转 | Trojan · Hysteria2 | Netflix · Disney+ · ChatGPT · Emby 影视库 | ¥20 / 200G | 流媒体 / 性价比 |
 
 ## 30 秒教你怎么选
 
 - **要低延迟专线、常年稳定不掉线** → 选 [西部数据](https://air-rem.github.io/westdata/)
 - **便宜稳定，日常刷视频 + 挂 AI** → 选 [Mitce](https://air-rem.github.io/mitce/)
 - **重度追剧党，想要 Emby 影视库** → 选 [糖果云](https://air-rem.github.io/candycloud/)
+- **便宜大流量看剧 + 全流媒体解锁** → 选 [红杏云](https://air-rem.github.io/hongxing/)
 
 ## 新手小提示
 
