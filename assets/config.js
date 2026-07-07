@@ -32,7 +32,10 @@ window.SITE = {
     "peiqian": "https://s.rtxk.us/s/n9gmxan",
     "juanwang": "https://i.rtxk.us/i/33zu397",
     "danta": "https://t.rtxk.us/t/k67qxy6",
-    "chaoshihui": "https://s.rtxk.us/s/c5n9usc"
+    "chaoshihui": "https://s.rtxk.us/s/c5n9usc",
+    "nicecloud": "https://s.rtxk.us/s/u879gws",
+    "kuailei": "https://t.rtxk.us/t/cp2d6j8",
+    "ktmcloud": "https://i.rtxk.us/i/fs2n9ra"
   },
   code: {
     "mitce": "like20",
@@ -62,7 +65,10 @@ window.SITE = {
     "peiqian": "",
     "juanwang": "",
     "danta": "",
-    "chaoshihui": ""
+    "chaoshihui": "",
+    "nicecloud": "",
+    "kuailei": "",
+    "ktmcloud": ""
   }
 };
 
