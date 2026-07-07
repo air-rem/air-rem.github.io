@@ -482,6 +482,7 @@ def main():
     idx = inject(idx, "COMPARE", render_compare())
     idx = inject(idx, "WALL", render_wall())
     idx = inject(idx, "FOOTER_AIRPORTS", render_footer_airports())
+    idx = inject(idx, "COUNT", str(len(AIRPORTS)))
     open(idx_path, "w", encoding="utf-8").write(idx)
     print("  ✓ index.html (injected)")
     print("Done.")
