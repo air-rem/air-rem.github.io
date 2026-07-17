@@ -399,26 +399,112 @@ def render_wall():
             '<div class="wall-track rev">%s%s</div></div></section>') % (n, chips, chips, chips, chips)
 
 def render_readme():
+    """生成面向 Google / GitHub 检索优化的 README。"""
     A = B
+    n = len(AIRPORTS)
+    featured = [a for a in AIRPORTS if a.get("featured")]
+    top_names = "、".join(
+        (a["name"] if a["en"] == a["name"] else "%s %s" % (a["name"], a["en"]))
+        for a in AIRPORTS[:6]
+    )
     L = []
-    L.append('<p align="center"><img src="assets/og.png" alt="AIRREM 领航 · 机场推荐榜" width="820"></p>')
+
+    # --- 首屏：H1 含核心搜索词，首段即 Google 摘要素材 ---
+    L.append('<p align="center">')
+    L.append('<img src="assets/og.png" alt="机场推荐榜 2026 · 科学上网机场评测 · AIRREM 领航" width="820">')
+    L.append("</p>")
     L.append("")
-    L.append('<h1 align="center">AIRREM 领航 · 机场推荐榜</h1>')
-    L.append('<p align="center">独立的机场（科学上网）推荐与评测 · 按需求快速选对高速稳定机场<br>')
-    L.append('线上站点：<a href="%s/">air-rem.github.io</a></p>' % A)
+    L.append("# 机场推荐 2026｜科学上网机场评测与对比 · AIRREM 领航")
+    L.append("")
+    L.append(
+        "**AIRREM 领航** 是独立的 **机场推荐 / 机场评测** 开源仓库与站点，"
+        "汇总 %d 家高速稳定 **科学上网机场**（翻墙机场 / 代理订阅服务），"
+        "按线路类型（IEPL 专线、直连、中转）、协议（Trojan、VLESS、Reality、Hysteria2、Shadowsocks）、"
+        "Netflix / Disney+ / ChatGPT 解锁与性价比横向对比，帮你 3 分钟选对机场。"
+        % n
+    )
+    L.append("")
+    L.append(
+        "在线站点：**[%s](%s/)** ｜ 本仓库：**[air-rem/air-rem.github.io](https://github.com/air-rem/air-rem.github.io)** ｜ 数据更新：%s"
+        % (A.replace("https://", ""), A, UPDATED)
+    )
+    L.append("")
+    L.append(
+        "精选包括：%s 等。价格与优惠码可能随官网调整，请以各机场官网为准。"
+        % top_names
+    )
     L.append("")
     L.append("---")
     L.append("")
+
+    # --- 目录：提升停留与抓取结构 ---
+    L.append("## 目录")
+    L.append("")
+    L.append("- [本仓库是什么](#本仓库是什么)")
+    L.append("- [2026 精选机场榜单](#2026-精选机场榜单)")
+    L.append("- [机场快速对比表](#机场快速对比表)")
+    L.append("- [30 秒教你怎么选机场](#30-秒教你怎么选机场)")
+    L.append("- [新手入门：第一次用机场](#新手入门第一次用机场)")
+    L.append("- [常见问题 FAQ](#常见问题-faq)")
+    L.append("- [相关搜索词](#相关搜索词)")
+    L.append("- [免责声明](#免责声明)")
+    L.append("")
+    L.append("---")
+    L.append("")
+
+    # --- 项目说明：仓库定位 + 可被检索的实体词 ---
+    L.append("## 本仓库是什么")
+    L.append("")
+    L.append(
+        "很多人搜索「**机场推荐**」「**哪家机场好**」「**科学上网机场**」「**稳定机场评测**」时，"
+        "会刷到大量广告站或过期榜单。本项目把 **评测内容、对比表、决策指南** 开源在 GitHub，"
+        "并同步发布到 GitHub Pages，方便检索、收藏与二次核对。"
+    )
+    L.append("")
+    L.append("| 项目 | 说明 |")
+    L.append("| --- | --- |")
+    L.append("| 仓库名 | `air-rem/air-rem.github.io` |")
+    L.append("| 线上站点 | [%s](%s/) |" % (A, A))
+    L.append("| 收录机场 | **%d** 家（榜单 + 机场大全） |" % n)
+    L.append("| 更新节奏 | 随套餐 / 线路变动维护（当前 %s） |" % UPDATED)
+    L.append("| 数据来源 | 公开套餐信息 + 场景向评测摘要 |")
+    L.append("| 使用方式 | 打开站点挑机场，或直接读下方榜单与对比表 |")
+    L.append("")
+    L.append("**你会得到：**")
+    L.append("")
+    L.append("- 按稳定性 / 性价比 / 追剧 / 大流量等场景的 **机场推荐**")
+    L.append("- 每家机场的 **线路类型、协议、解锁、起步价、适合人群**")
+    L.append("- 独立 SEO 详情页（可分享、可搜索）：例如 "
+              + " · ".join("[%s](%s/%s/)" % (a["name"], A, a["slug"]) for a in AIRPORTS[:4])
+              + " …")
+    L.append("- 新手避坑：月付试水、多机场容灾、客户端与协议匹配")
+    L.append("")
+    L.append(
+        "English: Independent **proxy / VPN-like subscription (机场)** reviews and rankings for 2026 — "
+        "compare IEPL dedicated lines, VLESS Reality, Hysteria2, Trojan, Netflix & ChatGPT unlock, and pricing."
+    )
+    L.append("")
+    L.append("---")
+    L.append("")
+
+    # --- 榜单 ---
     L.append("## 2026 精选机场榜单")
     L.append("")
-    L.append("按「综合稳定性 + 性价比 + 场景适配」精选。价格 / 优惠码可能随官网调整，请以各机场官网为准。")
+    L.append(
+        "以下为 **%d 家机场** 的推荐与评测摘要，按「综合稳定性 + 性价比 + 场景适配」整理。"
+        "完整图文评测见各机场详情页。"
+        % n
+    )
     L.append("")
     for i, a in enumerate(AIRPORTS):
         title = a["name"] if a["en"] == a["name"] else "%s %s" % (a["name"], a["en"])
         label = "  ·  " + ("「%s」" % a["rank_label"]) if a.get("rank_label") else ""
-        L.append("### %02d. %s%s" % (i + 1, title, label))
+        L.append("### %02d. %s 机场推荐%s" % (i + 1, title, label))
         L.append("")
-        L.append('<img src="assets/og/%s.png" alt="%s" width="720">' % (a["slug"], title))
+        L.append(
+            '<img src="assets/og/%s.png" alt="%s 机场评测与推荐 · 科学上网" width="720">'
+            % (a["slug"], title)
+        )
         L.append("")
         L.append("> %s" % a["tagline"])
         L.append("")
@@ -431,9 +517,16 @@ def render_readme():
         L.append("")
         L.append(a["verdict"])
         L.append("")
-        L.append("**完整评测 → %s/%s/**" % (A, a["slug"]))
+        L.append("**完整评测与优惠信息 → [%s 机场评测](%s/%s/)**" % (title, A, a["slug"]))
         L.append("")
-    L.append("## 快速对比")
+
+    # --- 对比表 ---
+    L.append("## 机场快速对比表")
+    L.append("")
+    L.append(
+        "一张表看懂 **机场对比**：线路、协议、解锁能力、起步价与适用场景。"
+        "适合搜索「机场哪家好」「机场性价比对比」时快速筛选。"
+    )
     L.append("")
     L.append("| 机场 | 线路类型 | 主要协议 | 解锁 | 起步价 | 最适合 |")
     L.append("| --- | --- | --- | --- | --- | --- |")
@@ -442,22 +535,105 @@ def render_readme():
             a["name"], A, a["slug"], a["type"], " · ".join(a["protocols"]),
             " · ".join(a["unlock"]), a["price_from"], a["price_unit"], a["best_for"]))
     L.append("")
-    L.append("## 30 秒教你怎么选")
+
+    # --- 决策 ---
+    L.append("## 30 秒教你怎么选机场")
     L.append("")
-    for a in AIRPORTS:
-        if a.get("featured"):
-            L.append("- **%s** → 选 [%s](%s/%s/)" % (a["scene"], a["name"], A, a["slug"]))
+    for a in featured:
+        L.append("- **%s** → 选 [%s](%s/%s/)" % (a["scene"], a["name"], A, a["slug"]))
     L.append("")
-    L.append("## 新手小提示")
+    L.append("更多场景与全部收录见线上 **[机场大全](%s/airports/)**。" % A)
+    L.append("")
+
+    # --- 新手 ---
+    L.append("## 新手入门：第一次用机场")
+    L.append("")
+    L.append("1. **选机场**：按上面场景选 1 家主力 + 1 家备用（降低跑路 / 故障风险）。")
+    L.append("2. **买套餐**：优先 **月付 / 小流量**，确认晚高峰与解锁后再考虑季付年付。")
+    L.append("3. **装客户端**：Windows 用 Clash Verge / v2rayN；macOS 用 Clash Verge；Android 用 Hiddify / v2rayNG；iOS 用 Shadowrocket。")
+    L.append("4. **导入订阅**：复制机场订阅链接 → 客户端更新节点 → 选延迟低的节点连接。")
+    L.append("5. **协议注意**：含 **Hysteria2** 的机场，请用支持该协议的客户端，否则导入会报错。")
+    L.append("")
+    L.append("### 避坑要点")
     L.append("")
     L.append("- 先买月付 / 小流量档验证稳定性，别一上来就大额年付。")
-    L.append("- 老牌机场更稳；新机场先小档试水。")
-    L.append("- 同时备用 2–3 家机场互为容灾，避免踩到跑路。")
-    L.append("- 新协议（如 Hysteria2）要用支持它的客户端，否则导入会报错。")
+    L.append("- 老牌机场通常更稳；新机场先小档试水。")
+    L.append("- 同时备用 2–3 家机场互为容灾。")
+    L.append("- 价格、节点、优惠码以官网实时信息为准。")
     L.append("")
+
+    # --- FAQ：利于长尾与精选摘要 ---
+    L.append("## 常见问题 FAQ")
+    L.append("")
+    L.append("### 机场是什么？和 VPN 有什么区别？")
+    L.append("")
+    L.append(
+        "「**机场**」是对提供 Shadowsocks / V2Ray / Trojan / VLESS 等 **代理订阅服务** 的俗称："
+        "购买套餐后得到订阅链接，导入客户端即可使用多个节点。"
+        "相比传统单一入口 VPN，机场通常 **节点更多、切换更灵活**，更常用于流媒体解锁与低延迟场景。"
+    )
+    L.append("")
+    L.append("### 2026 年怎么选靠谱的科学上网机场？")
+    L.append("")
+    L.append(
+        "先明确需求：要 **IEPL/IPLC 专线稳定**、要 **性价比口粮**、还是要 **Netflix/Emby 追剧**。"
+        "再看运营时长、是否支持月付、晚高峰表现与解锁列表。本仓库的 [精选榜单](#2026-精选机场榜单) 与 [对比表](#机场快速对比表) 就是按这个逻辑整理的。"
+    )
+    L.append("")
+    L.append("### 机场会不会跑路？怎么降低风险？")
+    L.append("")
+    L.append(
+        "行业存在停服 / 跑路风险。建议：优先运营时间较长的机场；**月付试水**；"
+        "**2–3 家备用**；不要把大额年付压在单一新站上。"
+    )
+    L.append("")
+    L.append("### 本仓库和官方站是什么关系？")
+    L.append("")
+    L.append(
+        "本仓库与 [%s](%s/) 为 **第三方信息与推荐平台**，非任何机场官方。"
+        "页面可能含推广链接；你通过链接注册或购买时我们可能获得佣金，**不会增加你的成本**。"
+        % (A.replace("https://", ""), A)
+    )
+    L.append("")
+
+    # --- 关键词簇：自然收束，便于长尾命中 ---
+    L.append("## 相关搜索词")
+    L.append("")
+    L.append(
+        "若你是通过以下关键词找到本页，说明路线对了："
+        "**机场推荐**、**机场评测**、**科学上网机场**、**翻墙机场推荐**、**稳定机场**、"
+        "**IEPL 专线机场**、**性价比机场**、**不限量机场**、**Netflix 解锁机场**、"
+        "**ChatGPT 机场**、**Clash 订阅机场**、**V2Ray 机场**、**Trojan 机场**、"
+        "**VLESS Reality 机场**、**Hysteria2 机场**、**2026 机场榜单**。"
+    )
+    L.append("")
+    L.append(
+        "品牌相关：" + "、".join(
+            a["name"] if a["en"] == a["name"] else "%s / %s" % (a["name"], a["en"])
+            for a in AIRPORTS[:12]
+        ) + " 等机场评测均可在本站检索。"
+    )
+    L.append("")
+
+    # --- 免责 ---
     L.append("## 免责声明")
     L.append("")
-    L.append("本仓库与站点为第三方信息与推荐平台，非任何机场官方；页面内含推广链接，若你通过链接注册或购买，我们可能获得一定佣金，但不会增加你的任何成本。各机场的线路、价格、优惠码可能随时变动，请以对应官网实时信息为准。代理 / 加密技术的使用需遵守你所在国家或地区的法律法规，本站内容仅供学习与技术研究参考。")
+    L.append(
+        "本仓库与站点为第三方信息与推荐平台，非任何机场官方；页面内含推广链接，"
+        "若你通过链接注册或购买，我们可能获得一定佣金，但不会增加你的任何成本。"
+        "各机场的线路、价格、优惠码可能随时变动，请以对应官网实时信息为准。"
+        "代理 / 加密技术的使用需遵守你所在国家或地区的法律法规，本站内容仅供学习与技术研究参考。"
+    )
+    L.append("")
+    L.append("---")
+    L.append("")
+    L.append(
+        "<p align=\"center\">⭐ 觉得有用请给仓库点 Star，方便以后搜索「AIRREM」「机场推荐 github」时找到我们<br>"
+        "<a href=\"%s/\">访问机场推荐站</a> · "
+        "<a href=\"https://github.com/air-rem/air-rem.github.io\">GitHub 仓库</a> · "
+        "<a href=\"%s/airports/\">机场大全</a></p>"
+        % (A, A)
+    )
     L.append("")
     return "\n".join(L) + "\n"
 
