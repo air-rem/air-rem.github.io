@@ -27,9 +27,8 @@ def chips(items, cls=""):
     return "".join('<span class="chip %s">%s</span>' % (cls, esc(x)) for x in items)
 
 def emby_badge(a):
-    # Emby 影音库高亮徽章（渐变底色，突出显示；无 emby 标记则不输出）
-    return ('<span class="chip" style="background:linear-gradient(90deg,#7E7BFF,#FF6AD5);'
-            'color:#fff;border-color:transparent;font-weight:600">🎬 Emby 影音库</span>') if a.get("emby") else ""
+    # Emby 影音库高亮徽章（紫色描边 chip，克制而醒目；无 emby 标记则不输出）
+    return '<span class="chip emby">🎬 Emby 影音库</span>' if a.get("emby") else ""
 
 def emblem(a, size=64):
     s, slug = size, a["slug"]
@@ -402,16 +401,16 @@ def render_emby():
         if not a.get("emby"):
             continue
         en = esc(a["en"]) if a["en"] != a["name"] else ""
+        small = ("<small>%s</small>" % en) if en else ""
         out.append(
-            '<article class="card air-card">'
-            '<div style="display:flex;gap:14px;align-items:center;margin-bottom:12px">%s'
-            '<div><h3 style="font-size:19px">%s <small>%s</small></h3>'
-            '<div class="tagrow" style="margin-top:6px">%s</div></div></div>'
-            '<p style="color:var(--ink-2);font-size:14.5px;min-height:48px">%s</p>'
-            '<div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px">'
-            '<span style="font-family:var(--font-mono);font-size:14px"><b>%s</b><span class="muted">%s</span></span>'
+            '<article class="card emby-card">'
+            '<div class="emby-head">%s'
+            '<div><h3>%s%s</h3>'
+            '<div class="tagrow" style="margin-top:7px">%s</div></div></div>'
+            '<p class="desc">%s</p>'
+            '<div class="emby-foot"><span class="price"><b>%s</b>%s</span>'
             '<a class="btn btn-aurora" href="/%s/">看评测 →</a></div></article>'
-            % (emblem(a, 52), esc(a["name"]), en, emby_badge(a), esc(a["tagline"]),
+            % (emblem(a, 46), esc(a["name"]), small, emby_badge(a), esc(a["tagline"]),
                esc(a["price_from"]), esc(a["price_unit"]), a["slug"]))
     return "\n".join(out)
 

@@ -279,16 +279,16 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 <img src="assets/og/yun69.png" alt="69云 69Yun 机场评测与推荐 · 科学上网" width="720">
 
-> 2022 年专线中转机场，节点覆盖广（含冷门地区），常搭配 Emby
+> 2022 年专线中转机场，节点覆盖广（含冷门地区），并提供 Emby 影视库，装上客户端登录即看，追剧党友好。
 
 - **线路类型**：专线中转
 - **主要协议**：Shadowsocks · VMess
-- **流媒体解锁**：Netflix · Disney+ · HBO · ChatGPT
+- **流媒体解锁**：Netflix · Disney+ · HBO · ChatGPT · Emby 影视库
 - **覆盖地区**：亚洲 · 欧美 · 含多个冷门地区
 - **起步价**：¥9.9 起 / 月（包月 / 按量）
-- **最适合**：冷门地区/备用
+- **最适合**：冷门地区 / Emby 影音
 
-节点覆盖面广、冷门地区有优势，套餐多样，适合主力或备用；建议先低价月付验证晚高峰与解锁，再考虑长期。
+节点覆盖面广、冷门地区有优势，套餐多样，还提供 Emby 影视库——登录即看片，稳定、速度快，UP 主在用，适合主力或备用；建议先低价月付验证晚高峰与解锁，再考虑长期。
 
 **完整评测与优惠信息 → [69云 69Yun 机场评测](https://air-rem.github.io/yun69/)**
 
@@ -590,6 +590,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 - 🎬 **[红杏云 HongXing](https://air-rem.github.io/hongxing/)** — 糖果云的母站，公网隧道中转 + 全流媒体解锁，还赠送 Emby 影视库，20 元 200G 的高性价比之选。
 - 🎬 **[渔云 YuYun](https://air-rem.github.io/yuyun/)** — IEPL 专线起步的新锐机场，主打稳定运营与多端定制，全套餐赠送 Emby 影视库，追剧观影一步到位。
 - 🎬 **[好鸭 NiceDuck](https://air-rem.github.io/niceduck/)** — 2023 年多入口中转机场，套餐自带 Emby 私人影视库
+- 🎬 **[69云 69Yun](https://air-rem.github.io/yun69/)** — 2022 年专线中转机场，节点覆盖广（含冷门地区），并提供 Emby 影视库，装上客户端登录即看，追剧党友好。
 - 🎬 **[超实惠加速 ChaoShiHui](https://air-rem.github.io/chaoshihui/)** — 主打高性价比定价的日常机场，并提供 Emby 影视库，花小钱也能追剧观影，追剧党的平价之选。
 - 🎬 **[清风云 QingFeng](https://air-rem.github.io/qingfeng/)** — 主打「只月付、不跑路」的轻量级中转机场，并提供 Emby 影视库，低成本也能追剧观影。
 
@@ -612,7 +613,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 | [快雷GO](https://air-rem.github.io/kuailei/) | IEPL 专线 + 直连 | AnyTLS · VLESS | Netflix · Disney+ · ChatGPT · TikTok | ¥15 / 月 110G | 晚高峰 / 速度 |
 | [NiceCloud](https://air-rem.github.io/nicecloud/) | 公网中转隧道 | Shadowsocks · SSR | Netflix · Disney+ · ChatGPT · TikTok | ¥12 / 月起 | 性价比 / 灵活流量 |
 | [OuO](https://air-rem.github.io/ouo/) | 公网隧道中转 | Shadowsocks | Netflix · Disney+ · YouTube · TikTok · ChatGPT | ¥10 / 月 | 多地区解锁 |
-| [69云](https://air-rem.github.io/yun69/) | 专线中转 | Shadowsocks · VMess | Netflix · Disney+ · HBO · ChatGPT | ¥9.9 / 月 | 冷门地区/备用 |
+| [69云](https://air-rem.github.io/yun69/) | 专线中转 | Shadowsocks · VMess | Netflix · Disney+ · HBO · ChatGPT · Emby 影视库 | ¥9.9 / 月 | 冷门地区 / Emby 影音 |
 | [蛋挞机场](https://air-rem.github.io/danta/) | 公网隧道中转 + IEPL 专线 | Shadowsocks | Netflix · Disney+ · YouTube Premium · ChatGPT · TikTok | ¥7 / 月 | 多入口进阶 |
 | [KTM Cloud](https://air-rem.github.io/ktmcloud/) | CN2/BGP 中转 + 专线 | VMess · Hysteria2 | Netflix · Disney+ · ChatGPT · TikTok | ¥15 / 月 300G | 大流量 / 性价比 |
 | [牛逼](https://air-rem.github.io/niubi/) | 公网中转 + 直连混合 | Shadowsocks · VMess · Trojan | Netflix · Disney+ · ChatGPT | ¥7.4 / 月 | 大流量党 |
