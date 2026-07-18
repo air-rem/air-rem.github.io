@@ -296,16 +296,16 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 <img src="assets/og/danta.png" alt="蛋挞机场 DanTa 机场评测与推荐 · 科学上网" width="720">
 
-> 2023 年成立，支持面板手动切换国内入口，团队自带 IDC 背景
+> 少数支持在面板手动切换国内入口的机场，IDC 团队 + IEPL 专线加持；月付 ¥12/99G 起，套餐灵活可买断
 
 - **线路类型**：公网隧道中转 + IEPL 专线
 - **主要协议**：Shadowsocks
 - **流媒体解锁**：Netflix · Disney+ · YouTube Premium · ChatGPT · TikTok
 - **覆盖地区**：港台新 · 日美韩 等，另有澳门等冷门节点
-- **起步价**：¥7 起 / 月（包月 / 按量）
+- **起步价**：¥12 起 / 月 99G（包月 / 按量）
 - **最适合**：多入口进阶
 
-亮点是可在面板手动挑国内入口（同类少见），团队做 IDC 出身、后续加入 IEPL 专线，诚意在线；新站且换过站长，建议先免费试用/月付观察过渡期。
+亮点是可在面板手动挑国内入口（同类少见），团队做 IDC 出身、后续加入 IEPL 专线，诚意在线；套餐灵活，月付低至 ¥12/99G，也提供 ¥40 起的不限时买断流量包；新站且换过站长，建议先免费试用/月付观察过渡期。
 
 **完整评测与优惠信息 → [蛋挞机场 DanTa 机场评测](https://air-rem.github.io/danta/)**
 
@@ -364,16 +364,16 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 <img src="assets/og/yousun.png" alt="游隼云 YouSun 机场评测与推荐 · 科学上网" width="720">
 
-> Hysteria2/Reality 协议为主，三网线路优化，支持按流量购买
+> 档位最全的大流量中转：月付 ¥9 到 ¥100（480G→6000G）任选，Hysteria2 新协议抗封、三网优化
 
 - **线路类型**：三网优化中转
 - **主要协议**：Shadowsocks · Trojan · Hysteria2
 - **流媒体解锁**：Netflix · Disney+ · ChatGPT
 - **覆盖地区**：美国 · 日本 · 香港 · 台湾 · 新加坡 等
-- **起步价**：¥0.03 起 / GB（包月 / 按流量）
-- **最适合**：按量轻用户
+- **起步价**：¥9 起 / 月 480G（包月 / 不限时买断）
+- **最适合**：大流量月付
 
-主打大流量与多地区原生 IP，协议较新、抗封是卖点，按量适合用量不固定；节点数与真实速度建议自行小额测试。
+主打大流量与多地区原生 IP，协议较新、抗封是卖点；套餐从 ¥9/480G 到 ¥100/6000G 月付档位齐全，另有 ¥15 起的不限时买断包（防失联用）；节点数与真实速度建议自行小额测试。
 
 **完整评测与优惠信息 → [游隼云 YouSun 机场评测](https://air-rem.github.io/yousun/)**
 
@@ -432,16 +432,16 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 <img src="assets/og/jisu.png" alt="极速机场 JiSu 机场评测与推荐 · 科学上网" width="720">
 
-> 主打超低价与不限时套餐，30+ 条线路覆盖多地区
+> 便宜到极致：月付 ¥5/1000G 起，仍给到 20000Mbps 峰值带宽与 30+ 线路，预算党口粮首选
 
 - **线路类型**：中转（多线路）
 - **主要协议**：Shadowsocks · Trojan · Hysteria2
 - **流媒体解锁**：Netflix · Disney+ · ChatGPT
 - **覆盖地区**：香港 · 日本 · 新加坡 · 美国 等 30+ 线路
-- **起步价**：见官网 起 （包月 / 按量 / 包年）
+- **起步价**：¥5 起 / 月 1000G（包月 / 包年 / 不限时买断）
 - **最适合**：预算优先入门
 
-低价入门档，套餐偏大众化的按量+不限时组合，性价比是主卖点；低价机场抗风险能力有限，先小额月付验证。
+低价入门档，月付 ¥5/1000G 起、年付每月 200G 仅 ¥12，另有不限时买断包，性价比是主卖点；低价机场抗风险能力有限，先小额月付验证。
 
 **完整评测与优惠信息 → [极速机场 JiSu 机场评测](https://air-rem.github.io/jisu/)**
 
@@ -449,13 +449,13 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 <img src="assets/og/liangxin.png" alt="良心云 Liangxin 机场评测与推荐 · 科学上网" width="720">
 
-> 2025 年新上线的 AWS 直连低价机场，主打超低价大流量
+> 低价大流量卷王：¥2/100G 起，带宽与设备数随档位一路涨到 10Gbps/100 台，AWS 直连新协议
 
 - **线路类型**：AWS 直连线路
 - **主要协议**：VLESS · Hysteria2
 - **流媒体解锁**：Netflix · Disney+ · ChatGPT · TikTok
 - **覆盖地区**：香港 · 日本 · 新加坡 · 韩国 · 美国 等
-- **起步价**：¥2 起 / 月（包月 / 按量）
+- **起步价**：¥2 起 / 月 100G（包月 / 不限时买断）
 - **最适合**：低价尝鲜党
 
 价格低、协议新（VLESS/Hy2），解锁反馈尚可；但运营时间短、直连机场普遍不稳定，强烈建议只用最低档月付观察，别直接年付。
@@ -517,16 +517,16 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 <img src="assets/og/juanwang.png" alt="卷王机场 JuanWang 机场评测与推荐 · 科学上网" width="720">
 
-> 注册即送大额一次性流量包，节点覆盖国家多
+> 全套餐「客户端数量不限」，多设备随便连；年付低至 ¥20/年，把性价比卷到极致
 
 - **线路类型**：公网隧道中转
 - **主要协议**：Hysteria · Trojan · VLESS · VMess
 - **流媒体解锁**：ChatGPT · TikTok
 - **覆盖地区**：美国 · 香港 · 台湾 · 新加坡 · 日本 · 英国 · 加拿大 · 德国 等 11 地区
-- **起步价**：免费试用 起 （注册送流量 / 付费套餐）
-- **最适合**：免费试水
+- **起步价**：¥20 起 / 年 100G（年付 / 月付 / 不限时买断）
+- **最适合**：多设备不限 · 年付党
 
-亮点是注册免费送的大流量套餐和覆盖 11 个地区的节点，适合零成本先体验；公开深度评测与长期数据较少，建议把免费套餐当体验装，满意再付费。
+最大亮点是所有套餐「客户端数量不限制」——多设备、全家共享、软路由都不受台数限制，这在同价位机场里相当少见；再加上年付 ¥20 起（每月 100G）的白菜价、订单日自动重置，名副其实的「卷王」。覆盖 11 个地区、入口优化中转；官方禁止滥用分享（发现封号），深度稳定性数据较少，建议先月付或不限时小额验证。
 
 **完整评测与优惠信息 → [卷王机场 JuanWang 机场评测](https://air-rem.github.io/juanwang/)**
 
@@ -534,16 +534,16 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 <img src="assets/og/qingfeng.png" alt="清风云 QingFeng 机场评测与推荐 · 科学上网" width="720">
 
-> 主打「只月付、不跑路」的轻量级中转机场，并提供 Emby 影视库，低成本也能追剧观影。
+> 自带专属 Emby 影视库、登录即追剧；全线 0.5X 低倍率节点，每月流量实际当双倍用，¥12/100G 起（≈200G）
 
 - **线路类型**：公网隧道中转
-- **主要协议**：Shadowsocks · VLESS · Hysteria
-- **流媒体解锁**：Netflix · ChatGPT · Emby 影视库
+- **主要协议**：AnyTLS · VLESS · Hysteria · Shadowsocks
+- **流媒体解锁**：Netflix · Disney+ · ChatGPT · Emby 影视库
 - **覆盖地区**：香港 · 日本 · 美国 等
-- **起步价**：见官网 起 （包月 / 按量）
-- **最适合**：新手轻量 / Emby 影音
+- **起步价**：¥12 起 / 月 100G（月付 / 季付 / 半年 / 年付）
+- **最适合**：Emby 追剧 / 流量翻倍
 
-定位入门轻量、主打月付不跑路，还提供 Emby 影视库——装上客户端登录即看，稳定、速度快，UP 主在用；公开评测较少，节点与稳定性建议自行小额验证，不建议大额年付。
+两大亮点很抓人：一是内置专属 Emby 私人影视库，装客户端登录即看、追剧免找片源；二是全线 0.5X 低倍率节点，100G 套餐实际可当 200G 用，性价比拉满。再加 AnyTLS 新协议、月/季/半年/年多周期、10 台设备同连，适合预算有限又想追剧的轻量党。公开评测较少、官方无退款，建议先月付小额验证。
 
 **完整评测与优惠信息 → [清风云 QingFeng 机场评测](https://air-rem.github.io/qingfeng/)**
 
@@ -592,7 +592,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 - 🎬 **[好鸭 NiceDuck](https://air-rem.github.io/niceduck/)** — 2023 年多入口中转机场，套餐自带 Emby 私人影视库
 - 🎬 **[69云 69Yun](https://air-rem.github.io/yun69/)** — 2022 年专线中转机场，节点覆盖广（含冷门地区），并提供 Emby 影视库，装上客户端登录即看，追剧党友好。
 - 🎬 **[超实惠加速 ChaoShiHui](https://air-rem.github.io/chaoshihui/)** — 主打高性价比定价的日常机场，并提供 Emby 影视库，花小钱也能追剧观影，追剧党的平价之选。
-- 🎬 **[清风云 QingFeng](https://air-rem.github.io/qingfeng/)** — 主打「只月付、不跑路」的轻量级中转机场，并提供 Emby 影视库，低成本也能追剧观影。
+- 🎬 **[清风云 QingFeng](https://air-rem.github.io/qingfeng/)** — 自带专属 Emby 影视库、登录即追剧；全线 0.5X 低倍率节点，每月流量实际当双倍用，¥12/100G 起（≈200G）
 
 ## 机场快速对比表
 
@@ -614,21 +614,21 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 | [NiceCloud](https://air-rem.github.io/nicecloud/) | 公网中转隧道 | Shadowsocks · SSR | Netflix · Disney+ · ChatGPT · TikTok | ¥12 / 月起 | 性价比 / 灵活流量 |
 | [OuO](https://air-rem.github.io/ouo/) | 公网隧道中转 | Shadowsocks | Netflix · Disney+ · YouTube · TikTok · ChatGPT | ¥10 / 月 | 多地区解锁 |
 | [69云](https://air-rem.github.io/yun69/) | 专线中转 | Shadowsocks · VMess | Netflix · Disney+ · HBO · ChatGPT · Emby 影视库 | ¥9.9 / 月 | 冷门地区 / Emby 影音 |
-| [蛋挞机场](https://air-rem.github.io/danta/) | 公网隧道中转 + IEPL 专线 | Shadowsocks | Netflix · Disney+ · YouTube Premium · ChatGPT · TikTok | ¥7 / 月 | 多入口进阶 |
+| [蛋挞机场](https://air-rem.github.io/danta/) | 公网隧道中转 + IEPL 专线 | Shadowsocks | Netflix · Disney+ · YouTube Premium · ChatGPT · TikTok | ¥12 / 月 99G | 多入口进阶 |
 | [KTM Cloud](https://air-rem.github.io/ktmcloud/) | CN2/BGP 中转 + 专线 | VMess · Hysteria2 | Netflix · Disney+ · ChatGPT · TikTok | ¥15 / 月 300G | 大流量 / 性价比 |
 | [牛逼](https://air-rem.github.io/niubi/) | 公网中转 + 直连混合 | Shadowsocks · VMess · Trojan | Netflix · Disney+ · ChatGPT | ¥7.4 / 月 | 大流量党 |
 | [雪山机场](https://air-rem.github.io/xueshan/) | 家宽 / 中转线路 | Shadowsocks · Trojan · Hysteria2 · VLESS | Netflix · Disney+ · ChatGPT | ¥9.9 / 月 | 日常全能 |
-| [游隼云](https://air-rem.github.io/yousun/) | 三网优化中转 | Shadowsocks · Trojan · Hysteria2 | Netflix · Disney+ · ChatGPT | ¥0.03 / GB | 按量轻用户 |
+| [游隼云](https://air-rem.github.io/yousun/) | 三网优化中转 | Shadowsocks · Trojan · Hysteria2 | Netflix · Disney+ · ChatGPT | ¥9 / 月 480G | 大流量月付 |
 | [Hneko云机场](https://air-rem.github.io/hneko/) | 公网隧道中转 | Shadowsocks · Trojan · VMess | Netflix · ChatGPT | ¥7 / 月 | 大流量党 |
 | [超实惠加速](https://air-rem.github.io/chaoshihui/) | 中转 / 直连（以官网为准） | Shadowsocks · Trojan · VLESS | Netflix · ChatGPT · Emby 影视库 | ¥15 / 月 | 高性价比 / Emby 影音 |
 | [凌云加速](https://air-rem.github.io/lingyun/) | 中转（线路细节未公开确认） | Shadowsocks · Trojan · VMess | Netflix · Disney+ · ChatGPT | ¥10.9 / 月 | 低价尝鲜 |
-| [极速机场](https://air-rem.github.io/jisu/) | 中转（多线路） | Shadowsocks · Trojan · Hysteria2 | Netflix · Disney+ · ChatGPT | 见官网  | 预算优先入门 |
-| [良心云](https://air-rem.github.io/liangxin/) | AWS 直连线路 | VLESS · Hysteria2 | Netflix · Disney+ · ChatGPT · TikTok | ¥2 / 月 | 低价尝鲜党 |
+| [极速机场](https://air-rem.github.io/jisu/) | 中转（多线路） | Shadowsocks · Trojan · Hysteria2 | Netflix · Disney+ · ChatGPT | ¥5 / 月 1000G | 预算优先入门 |
+| [良心云](https://air-rem.github.io/liangxin/) | AWS 直连线路 | VLESS · Hysteria2 | Netflix · Disney+ · ChatGPT · TikTok | ¥2 / 月 100G | 低价尝鲜党 |
 | [一分机场](https://air-rem.github.io/yifen/) | 直连（大厂云，无专线） | VLESS · Hysteria2 | Netflix · ChatGPT · bilibili | ¥2 / 月 | 低价大流量 |
 | [顶级机场](https://air-rem.github.io/dingji/) | 公网直连 | Hysteria2 · VLESS | YouTube · ChatGPT | ¥5 / 月 | 价格敏感重流量 |
 | [赔钱机场](https://air-rem.github.io/peiqian/) | 全直连 / 部分中转 | Shadowsocks · Trojan · VMess · VLESS · Hysteria2 | Netflix · ChatGPT · TikTok | ¥1.99 / 月 | 极致低价备用 |
-| [卷王机场](https://air-rem.github.io/juanwang/) | 公网隧道中转 | Hysteria · Trojan · VLESS · VMess | ChatGPT · TikTok | 免费试用  | 免费试水 |
-| [清风云](https://air-rem.github.io/qingfeng/) | 公网隧道中转 | Shadowsocks · VLESS · Hysteria | Netflix · ChatGPT · Emby 影视库 | 见官网  | 新手轻量 / Emby 影音 |
+| [卷王机场](https://air-rem.github.io/juanwang/) | 公网隧道中转 | Hysteria · Trojan · VLESS · VMess | ChatGPT · TikTok | ¥20 / 年 100G | 多设备不限 · 年付党 |
+| [清风云](https://air-rem.github.io/qingfeng/) | 公网隧道中转 | AnyTLS · VLESS · Hysteria · Shadowsocks | Netflix · Disney+ · ChatGPT · Emby 影视库 | ¥12 / 月 100G | Emby 追剧 / 流量翻倍 |
 | [飞狗](https://air-rem.github.io/feigou/) | 公网隧道中转 | Shadowsocks · Trojan · VMess | Netflix · YouTube · ChatGPT | 见官网  | 低价备用 |
 | [神龙](https://air-rem.github.io/shenlong/) | 中转 / 专线（以官网为准） | Shadowsocks · VMess · Trojan | Netflix · ChatGPT | ¥9 / 月 | 小众探索 |
 
