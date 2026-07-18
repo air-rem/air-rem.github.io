@@ -64,7 +64,7 @@ def nav_html():
 '<stop offset="0" stop-color="#35E0D4"/><stop offset=".5" stop-color="#7E7BFF"/><stop offset="1" stop-color="#FF6AD5"/>'
 '</linearGradient></defs><circle cx="20" cy="20" r="18" stroke="url(#bg1)" stroke-width="1.6" opacity=".5"/>'
 '<path d="M20 5 L26 32 L20 27 L14 32 Z" fill="url(#bg1)"/><circle cx="20" cy="20" r="2.4" fill="#fff"/></svg>'
-'<span>AIRREM<small>领航 · 机场推荐榜</small></span></a>'
+'<span>机场推荐榜<small>AIRREM 领航 · 专业实测</small></span></a>'
 '<button class="nav-toggle" aria-label="展开菜单" aria-expanded="false">☰</button>'
 '<div class="nav-links">'
 '<a href="/#board">机场榜单</a><a href="/#emby">Emby影音</a><a href="/airports/">机场大全</a>'
