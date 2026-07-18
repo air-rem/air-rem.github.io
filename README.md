@@ -4,7 +4,7 @@
 
 # 机场推荐 2026｜科学上网机场评测与对比 · AIRREM 领航
 
-**AIRREM 领航** 是独立的 **机场推荐 / 机场评测** 开源仓库与站点，汇总 31 家高速稳定 **科学上网机场**（翻墙机场 / 代理订阅服务），按线路类型（IEPL 专线、直连、中转）、协议（Trojan、VLESS、Reality、Hysteria2、Shadowsocks）、Netflix / Disney+ / ChatGPT 解锁与性价比横向对比，帮你 3 分钟选对机场。
+**AIRREM 领航** 是独立的 **机场推荐 / 机场评测** 开源仓库与站点，汇总 32 家高速稳定 **科学上网机场**（翻墙机场 / 代理订阅服务），按线路类型（IEPL 专线、直连、中转）、协议（Trojan、VLESS、Reality、Hysteria2、Shadowsocks）、Netflix / Disney+ / ChatGPT 解锁与性价比横向对比，帮你 3 分钟选对机场。
 
 在线站点：**[air-rem.github.io](https://air-rem.github.io/)** ｜ 本仓库：**[air-rem/air-rem.github.io](https://github.com/air-rem/air-rem.github.io)** ｜ 数据更新：2026-07
 
@@ -34,7 +34,7 @@
 | --- | --- |
 | 仓库名 | `air-rem/air-rem.github.io` |
 | 线上站点 | [https://air-rem.github.io](https://air-rem.github.io/) |
-| 收录机场 | **31** 家（榜单 + 机场大全） |
+| 收录机场 | **32** 家（榜单 + 机场大全） |
 | 更新节奏 | 随套餐 / 线路变动维护（当前 2026-07） |
 | 数据来源 | 公开套餐信息 + 场景向评测摘要 |
 | 使用方式 | 打开站点挑机场，或直接读下方榜单与对比表 |
@@ -52,7 +52,7 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 ## 2026 精选机场榜单
 
-以下为 **31 家机场** 的推荐与评测摘要，按「综合稳定性 + 性价比 + 场景适配」整理。完整图文评测见各机场详情页。
+以下为 **32 家机场** 的推荐与评测摘要，按「综合稳定性 + 性价比 + 场景适配」整理。完整图文评测见各机场详情页。
 
 ### 01. Mitce 机场推荐  ·  「榜一推荐」
 
@@ -207,7 +207,24 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 **完整评测与优惠信息 → [神龙 ShenLong 机场评测](https://air-rem.github.io/shenlong/)**
 
-### 10. 快雷GO Kuailei GO 机场推荐  ·  「晚高峰加速」
+### 10. Tapcloud 机场推荐  ·  「全平台解锁」
+
+<img src="assets/og/tapcloud.png" alt="Tapcloud 机场评测与推荐 · 科学上网" width="720">
+
+> 解锁平台一网打尽：Netflix/Disney+/HBO 之外还拿下 MyTVSuper 港剧、Bahamut 巴哈动画疯、BiliBili 港澳台，最高 5000Mbps、支持家庭共享；月付 ¥12/100G 起（含一档 IEPL 专线），另配一次性不限时流量包，五折码 xiaoqi
+
+- **线路类型**：公网中转（含 IEPL 专线档）
+- **主要协议**：VLESS-Vision · Hysteria2 · AnyTLS
+- **流媒体解锁**：Netflix · Disney+ · ChatGPT · MyTVSuper · HBO · Bahamut
+- **覆盖地区**：洛杉矶 · 法兰克福 · 东京 · 新加坡 · 香港 等 25+ 国家
+- **起步价**：¥12 起 / 月 100G（月付（至 3 年付）/ 不限时流量包）
+- **最适合**：全平台流媒体解锁
+
+Tapcloud（品牌页署名 TrustedAccessPath / 可信路径）是 2025 年新开的中转机场，最大杀器是解锁平台特别全——除 Netflix/Disney+/ChatGPT 外，还覆盖 MyTVSuper 港剧、Bahamut 巴哈姆特动画疯、HBO、BiliBili 港澳台等，港剧日漫欧美剧一家全追；最高 5000Mbps、支持家庭共享，套餐从月付 ¥12/100G（含一档 IEPL 专线）到 ¥40/500G，另有 ¥40/80/180 一次性不限时流量包，配五折码 xiaoqi。注意它是缺乏第三方实测的新中转站、且有多个山寨/更换域名，务必认准官方地址、先小额月付验证晚高峰。
+
+**完整评测与优惠信息 → [Tapcloud 机场评测](https://air-rem.github.io/tapcloud/)**
+
+### 11. 快雷GO Kuailei GO 机场推荐  ·  「晚高峰加速」
 
 <img src="assets/og/kuailei.png" alt="快雷GO Kuailei GO 机场评测与推荐 · 科学上网" width="720">
 
@@ -224,7 +241,7 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 **完整评测与优惠信息 → [快雷GO Kuailei GO 机场评测](https://air-rem.github.io/kuailei/)**
 
-### 11. 好鸭 NiceDuck 机场推荐  ·  「追剧全能」
+### 12. 好鸭 NiceDuck 机场推荐  ·  「追剧全能」
 
 <img src="assets/og/niceduck.png" alt="好鸭 NiceDuck 机场评测与推荐 · 科学上网" width="720">
 
@@ -241,7 +258,7 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 **完整评测与优惠信息 → [好鸭 NiceDuck 机场评测](https://air-rem.github.io/niceduck/)**
 
-### 12. 流量光 LiuLiangGuang 机场推荐  ·  「流媒体重度」
+### 13. 流量光 LiuLiangGuang 机场推荐  ·  「流媒体重度」
 
 <img src="assets/og/llguang.png" alt="流量光 LiuLiangGuang 机场评测与推荐 · 科学上网" width="720">
 
@@ -258,7 +275,7 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 **完整评测与优惠信息 → [流量光 LiuLiangGuang 机场评测](https://air-rem.github.io/llguang/)**
 
-### 13. NiceCloud 机场推荐  ·  「灵活流量」
+### 14. NiceCloud 机场推荐  ·  「灵活流量」
 
 <img src="assets/og/nicecloud.png" alt="NiceCloud 机场评测与推荐 · 科学上网" width="720">
 
@@ -275,7 +292,7 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 **完整评测与优惠信息 → [NiceCloud 机场评测](https://air-rem.github.io/nicecloud/)**
 
-### 14. OuO 机场推荐
+### 15. OuO 机场推荐
 
 <img src="assets/og/ouo.png" alt="OuO 机场评测与推荐 · 科学上网" width="720">
 
@@ -292,7 +309,7 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 **完整评测与优惠信息 → [OuO 机场评测](https://air-rem.github.io/ouo/)**
 
-### 15. 69云 69Yun 机场推荐
+### 16. 69云 69Yun 机场推荐
 
 <img src="assets/og/yun69.png" alt="69云 69Yun 机场评测与推荐 · 科学上网" width="720">
 
@@ -309,7 +326,7 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 **完整评测与优惠信息 → [69云 69Yun 机场评测](https://air-rem.github.io/yun69/)**
 
-### 16. 蛋挞机场 DanTa 机场推荐
+### 17. 蛋挞机场 DanTa 机场推荐
 
 <img src="assets/og/danta.png" alt="蛋挞机场 DanTa 机场评测与推荐 · 科学上网" width="720">
 
@@ -326,7 +343,7 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 **完整评测与优惠信息 → [蛋挞机场 DanTa 机场评测](https://air-rem.github.io/danta/)**
 
-### 17. KTM Cloud 机场推荐
+### 18. KTM Cloud 机场推荐
 
 <img src="assets/og/ktmcloud.png" alt="KTM Cloud 机场评测与推荐 · 科学上网" width="720">
 
@@ -343,7 +360,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 **完整评测与优惠信息 → [KTM Cloud 机场评测](https://air-rem.github.io/ktmcloud/)**
 
-### 18. 牛逼 Niubi 机场推荐
+### 19. 牛逼 Niubi 机场推荐
 
 <img src="assets/og/niubi.png" alt="牛逼 Niubi 机场评测与推荐 · 科学上网" width="720">
 
@@ -360,7 +377,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 **完整评测与优惠信息 → [牛逼 Niubi 机场评测](https://air-rem.github.io/niubi/)**
 
-### 19. 雪山机场 XueShan 机场推荐
+### 20. 雪山机场 XueShan 机场推荐
 
 <img src="assets/og/xueshan.png" alt="雪山机场 XueShan 机场评测与推荐 · 科学上网" width="720">
 
@@ -377,7 +394,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 **完整评测与优惠信息 → [雪山机场 XueShan 机场评测](https://air-rem.github.io/xueshan/)**
 
-### 20. 游隼云 YouSun 机场推荐
+### 21. 游隼云 YouSun 机场推荐
 
 <img src="assets/og/yousun.png" alt="游隼云 YouSun 机场评测与推荐 · 科学上网" width="720">
 
@@ -394,7 +411,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 **完整评测与优惠信息 → [游隼云 YouSun 机场评测](https://air-rem.github.io/yousun/)**
 
-### 21. Hneko云机场 Hneko 机场推荐
+### 22. Hneko云机场 Hneko 机场推荐
 
 <img src="assets/og/hneko.png" alt="Hneko云机场 Hneko 机场评测与推荐 · 科学上网" width="720">
 
@@ -411,7 +428,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 **完整评测与优惠信息 → [Hneko云机场 Hneko 机场评测](https://air-rem.github.io/hneko/)**
 
-### 22. 超实惠加速 ChaoShiHui 机场推荐
+### 23. 超实惠加速 ChaoShiHui 机场推荐
 
 <img src="assets/og/chaoshihui.png" alt="超实惠加速 ChaoShiHui 机场评测与推荐 · 科学上网" width="720">
 
@@ -428,7 +445,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 **完整评测与优惠信息 → [超实惠加速 ChaoShiHui 机场评测](https://air-rem.github.io/chaoshihui/)**
 
-### 23. 凌云加速 LingYun 机场推荐
+### 24. 凌云加速 LingYun 机场推荐
 
 <img src="assets/og/lingyun.png" alt="凌云加速 LingYun 机场评测与推荐 · 科学上网" width="720">
 
@@ -445,7 +462,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 **完整评测与优惠信息 → [凌云加速 LingYun 机场评测](https://air-rem.github.io/lingyun/)**
 
-### 24. 极速机场 JiSu 机场推荐
+### 25. 极速机场 JiSu 机场推荐
 
 <img src="assets/og/jisu.png" alt="极速机场 JiSu 机场评测与推荐 · 科学上网" width="720">
 
@@ -462,7 +479,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 **完整评测与优惠信息 → [极速机场 JiSu 机场评测](https://air-rem.github.io/jisu/)**
 
-### 25. 良心云 Liangxin 机场推荐
+### 26. 良心云 Liangxin 机场推荐
 
 <img src="assets/og/liangxin.png" alt="良心云 Liangxin 机场评测与推荐 · 科学上网" width="720">
 
@@ -479,7 +496,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 **完整评测与优惠信息 → [良心云 Liangxin 机场评测](https://air-rem.github.io/liangxin/)**
 
-### 26. 一分机场 YiFen 机场推荐
+### 27. 一分机场 YiFen 机场推荐
 
 <img src="assets/og/yifen.png" alt="一分机场 YiFen 机场评测与推荐 · 科学上网" width="720">
 
@@ -496,7 +513,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 **完整评测与优惠信息 → [一分机场 YiFen 机场评测](https://air-rem.github.io/yifen/)**
 
-### 27. 顶级机场 DingJi 机场推荐
+### 28. 顶级机场 DingJi 机场推荐
 
 <img src="assets/og/dingji.png" alt="顶级机场 DingJi 机场评测与推荐 · 科学上网" width="720">
 
@@ -513,7 +530,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 **完整评测与优惠信息 → [顶级机场 DingJi 机场评测](https://air-rem.github.io/dingji/)**
 
-### 28. 赔钱机场 PeiQian 机场推荐
+### 29. 赔钱机场 PeiQian 机场推荐
 
 <img src="assets/og/peiqian.png" alt="赔钱机场 PeiQian 机场评测与推荐 · 科学上网" width="720">
 
@@ -530,7 +547,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 **完整评测与优惠信息 → [赔钱机场 PeiQian 机场评测](https://air-rem.github.io/peiqian/)**
 
-### 29. 卷王机场 JuanWang 机场推荐
+### 30. 卷王机场 JuanWang 机场推荐
 
 <img src="assets/og/juanwang.png" alt="卷王机场 JuanWang 机场评测与推荐 · 科学上网" width="720">
 
@@ -547,7 +564,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 **完整评测与优惠信息 → [卷王机场 JuanWang 机场评测](https://air-rem.github.io/juanwang/)**
 
-### 30. 清风云 QingFeng 机场推荐
+### 31. 清风云 QingFeng 机场推荐
 
 <img src="assets/og/qingfeng.png" alt="清风云 QingFeng 机场评测与推荐 · 科学上网" width="720">
 
@@ -564,7 +581,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 **完整评测与优惠信息 → [清风云 QingFeng 机场评测](https://air-rem.github.io/qingfeng/)**
 
-### 31. 飞狗 FeiGou 机场推荐
+### 32. 飞狗 FeiGou 机场推荐
 
 <img src="assets/og/feigou.png" alt="飞狗 FeiGou 机场评测与推荐 · 科学上网" width="720">
 
@@ -609,6 +626,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 | [淘气兔](https://air-rem.github.io/taoqitu/) | 中转 + IEPL 专线 | Shadowsocks · Trojan | Netflix · ChatGPT | ¥7.8 / 月 | 联通移动用户 |
 | [渔云](https://air-rem.github.io/yuyun/) | IEPL 专线 + 中转 | VLESS · Hysteria2 | Netflix · Disney+ · ChatGPT · Emby 影视库 | ¥9 / 月 | 长期稳定 / Emby 影音 |
 | [神龙](https://air-rem.github.io/shenlong/) | 全线 IEPL 专线 | Shadowsocks · VMess · Trojan | Netflix · Disney+ · ChatGPT | ¥10 / 月 100G | IEPL 专线 · 永久流量 |
+| [Tapcloud](https://air-rem.github.io/tapcloud/) | 公网中转（含 IEPL 专线档） | VLESS-Vision · Hysteria2 · AnyTLS | Netflix · Disney+ · ChatGPT · MyTVSuper · HBO · Bahamut | ¥12 / 月 100G | 全平台流媒体解锁 |
 | [快雷GO](https://air-rem.github.io/kuailei/) | IEPL 专线 + 直连 | AnyTLS · VLESS | Netflix · Disney+ · ChatGPT · TikTok | ¥20 / 月 150G | 专线加速 · 全设备档 |
 | [好鸭](https://air-rem.github.io/niceduck/) | 多入口隧道中转 | Shadowsocks | Netflix · Disney+ · YouTube · ChatGPT · Emby 影视库 | ¥12 / 月 | 追剧兼解锁 |
 | [流量光](https://air-rem.github.io/llguang/) | BGP 中转 + 专线可选 | Trojan · Shadowsocks | Netflix · Disney+ · HBO · Spotify · TikTok · ChatGPT | ¥9.9 / 月 | 流媒体重度 |
@@ -643,6 +661,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 - **联通 / 移动用户要中转+专线混合** → 选 [淘气兔](https://air-rem.github.io/taoqitu/)
 - **要 IEPL 专线，还想套餐白送 Emby 影视库** → 选 [渔云](https://air-rem.github.io/yuyun/)
 - **想要 IEPL 专线的稳定与速度，又想要便宜的永久流量** → 选 [神龙](https://air-rem.github.io/shenlong/)
+- **港剧日漫欧美剧全都追，想要一家解锁平台最全的机场** → 选 [Tapcloud](https://air-rem.github.io/tapcloud/)
 - **冲海外专线速度、个人到团队多设备** → 选 [快雷GO](https://air-rem.github.io/kuailei/)
 - **追剧 + 解锁，还想要 Emby** → 选 [好鸭](https://air-rem.github.io/niceduck/)
 - **Netflix/Disney+/HBO 等全解锁重度用户** → 选 [流量光](https://air-rem.github.io/llguang/)
@@ -687,7 +706,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 若你是通过以下关键词找到本页，说明路线对了：**机场推荐**、**机场评测**、**科学上网机场**、**翻墙机场推荐**、**稳定机场**、**IEPL 专线机场**、**性价比机场**、**不限量机场**、**Netflix 解锁机场**、**ChatGPT 机场**、**Clash 订阅机场**、**V2Ray 机场**、**Trojan 机场**、**VLESS Reality 机场**、**Hysteria2 机场**、**2026 机场榜单**。
 
-品牌相关：Mitce、西部数据 / WestData、守候 / Shouhou、糖果云 / CandyCloud、红杏云 / HongXing、自由猫 / FreeCat、淘气兔 / TaoQiTu、渔云 / YuYun、神龙 / ShenLong、快雷GO / Kuailei GO、好鸭 / NiceDuck、流量光 / LiuLiangGuang 等机场评测均可在本站检索。
+品牌相关：Mitce、西部数据 / WestData、守候 / Shouhou、糖果云 / CandyCloud、红杏云 / HongXing、自由猫 / FreeCat、淘气兔 / TaoQiTu、渔云 / YuYun、神龙 / ShenLong、Tapcloud、快雷GO / Kuailei GO、好鸭 / NiceDuck 等机场评测均可在本站检索。
 
 ## 免责声明
 

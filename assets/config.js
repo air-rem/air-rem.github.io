@@ -35,7 +35,8 @@ window.SITE = {
     "chaoshihui": "https://s.rtxk.us/s/c5n9usc",
     "nicecloud": "https://s.rtxk.us/s/u879gws",
     "kuailei": "https://t.rtxk.us/t/cp2d6j8",
-    "ktmcloud": "https://i.rtxk.us/i/fs2n9ra"
+    "ktmcloud": "https://i.rtxk.us/i/fs2n9ra",
+    "tapcloud": "https://s.rtxk.us/s/5qv7zcn"
   },
   code: {
     "mitce": "like20",
@@ -68,7 +69,8 @@ window.SITE = {
     "chaoshihui": "",
     "nicecloud": "",
     "kuailei": "",
-    "ktmcloud": ""
+    "ktmcloud": "",
+    "tapcloud": "xiaoqi"
   }
 };
 
