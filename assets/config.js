@@ -41,7 +41,7 @@ window.SITE = {
     "mitce": "like20",
     "candycloud": "Candytally",
     "hongxing": "lu88",
-    "westdata": "",
+    "westdata": "WD-DDR6",
     "niubi": "",
     "liangxin": "",
     "shouhou": "",
