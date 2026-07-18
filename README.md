@@ -58,16 +58,16 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 <img src="assets/og/mitce.png" alt="Mitce 机场评测与推荐 · 科学上网" width="720">
 
-> 新加坡团队直连机场，少见的 VLESS+Reality／Hysteria2 组合，还有约 ¥21/月不限量套餐，新手口粮首选。
+> 全站主推的性价比之王：月付低至约 ¥4/100G，约 ¥21/月就能不限流量敞开用；VLESS+Reality + 原生住宅 IP，解锁强、抗封稳，新手口粮闭眼入
 
 - **线路类型**：直连（部分 BGP 中转）
 - **主要协议**：VLESS+Reality · Hysteria2
 - **流媒体解锁**：Netflix · Disney+ · ChatGPT
 - **覆盖地区**：德 · 英 · 港 · 日 · 韩 · 新 · 台 · 美（8 地）
-- **起步价**：¥4 起 / 100G（低价包月 / 不限量套餐）
-- **最适合**：性价比 / 新手
+- **起步价**：¥4 起 / 月 100G（低价月付 / 不限流量套餐）
+- **最适合**：性价比 / 新手主推
 
-高性价比“口粮机场”的代表：便宜、有不限量套餐、Reality 抗封能力强，日常刷视频、挂 ChatGPT 很够用。直连线路晚高峰稳定性一般，对线路要求极高者可当备用梯子。
+我们最想推的口粮机场，性价比是最大杀器：Basic 约 ¥4/月给 100G，Standard/Pro 到 500G/1000G 也才约 ¥9/¥14，还有约 ¥21/月的不限流量套餐敞开用。协议是抗封的 VLESS+Reality，套餐自带原生住宅 IP，解锁流媒体、注册各类服务都更稳；动态 1000Mbps、多国网络，另有中国网络优化的日本线路（Hysteria2&Reality）。直连线路对电信晚高峰一般，追求极致低延迟可再备一家；日常刷视频、挂 ChatGPT 闭眼入。
 
 **完整评测与优惠信息 → [Mitce 机场评测](https://air-rem.github.io/mitce/)**
 
@@ -109,16 +109,16 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 <img src="assets/og/candycloud.png" alt="糖果云 CandyCloud 机场评测与推荐 · 科学上网" width="720">
 
-> 红杏云旗下分站，IEPL 专线主打晚高峰 4K，并内置 Emby 影视库，追剧党的省心之选。
+> 影视追剧旗舰：极速定制 IEPL 专线 + 全档赠送 EMBY 私人影视库，设备不限、支持家庭共享，¥18/100G 起低门槛入手
 
 - **线路类型**：IEPL 专线
 - **主要协议**：Shadowsocks · V2Ray
-- **流媒体解锁**：Netflix · ChatGPT · Emby 影视库
+- **流媒体解锁**：Netflix · Disney+ · ChatGPT · Emby 影视库
 - **覆盖地区**：香港 · 日本 · 新加坡 等
-- **起步价**：¥28 起 / 100G（包月 / 季付）
-- **最适合**：影视 / 追剧
+- **起步价**：¥18 起 / 月 100G（月付 / 季付 / 半年 / 年付（至 3 年付））
+- **最适合**：影视追剧旗舰
 
-2025 年新锐，红杏云旗下分站，靠 IEPL 专线 + 内置 Emby 影视库主打“看剧体验”，晚高峰 4K 流畅。属于新机场，建议先月付小档验证稳定性，别一上来大额年付。
+把「看剧」做到极致的影视旗舰：全线极速定制 IEPL 专线保晚高峰 4K，四档套餐全部赠送 EMBY 私人影视库——装客户端登录即看、追剧免找片源；设备不限、家庭共享无压力，入门 ¥18/100G 门槛很低，600G 档是官网热销「火爆」款，多周期可选（月付到 3 年付）。属新锐机场，建议先月付小档验证晚高峰。
 
 **完整评测与优惠信息 → [糖果云 CandyCloud 机场评测](https://air-rem.github.io/candycloud/)**
 
@@ -126,16 +126,16 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 <img src="assets/og/hongxing.png" alt="红杏云 HongXing 机场评测与推荐 · 科学上网" width="720">
 
-> 糖果云的母站，公网隧道中转 + 全流媒体解锁，还赠送 Emby 影视库，20 元 200G 的高性价比之选。
+> IEPL 专线 + 赠 EMBY 影视库，大流量还便宜：月付 ¥80 就有 1200G，独有不限时大流量买断（3000G ¥388 / 6000G ¥688），追剧囤量两不误
 
-- **线路类型**：公网隧道中转
+- **线路类型**：IEPL 专线
 - **主要协议**：Trojan · Hysteria2
 - **流媒体解锁**：Netflix · Disney+ · ChatGPT · Emby 影视库
 - **覆盖地区**：香港 · 日本 · 台湾 · 新加坡 · 美国 等
-- **起步价**：¥20 起 / 200G（包月 / 季付）
-- **最适合**：流媒体 / 性价比
+- **起步价**：¥20 起 / 月 200G（月付（至 3 年付）/ 不限时买断）
+- **最适合**：流媒体 / 大流量性价比
 
-2024 年新站，把资源砸在流媒体解锁上：Netflix / Disney+ / ChatGPT 全解、4K 秒播、还赠送 Emby 影视库，价格也便宜。想要 IEPL 专线要去它的分站糖果云；新站建议先月付小额验证晚高峰。
+升级为全线 IEPL 专线后更能打：月付四档都赠送 EMBY 私人影视库、设备不限支持家庭共享，且大流量档很便宜（¥80/1200G）；最独特的是还有别家少见的不限时大流量买断（3000G ¥388、6000G ¥688、用完为止），既想追剧又想囤大流量的性价比党最合适。备用域名较多，认准官方地址；新站建议先月付验证晚高峰。
 
 **完整评测与优惠信息 → [红杏云 HongXing 机场评测](https://air-rem.github.io/hongxing/)**
 
@@ -586,8 +586,8 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 下面这几家在订阅之外还 **内置 / 赠送 Emby 私人影视库**：装上 Emby 客户端、用机场提供的账号登录即可在线看片，相当于自带一个「私人奈飞」，省去自己找片源。它们 **稳定、速度快，UP 主与追剧党常用**。片源、清晰度与可用性以各机场官网实时信息为准。
 
 - 🎬 **[守候 Shouhou](https://air-rem.github.io/shouhou/)** — 2020 年老牌机场，中转+专线双线路，节点丰富含低倍率，并提供 Emby 私人影视库，装上 Emby 客户端登录即看，追剧党省心。
-- 🎬 **[糖果云 CandyCloud](https://air-rem.github.io/candycloud/)** — 红杏云旗下分站，IEPL 专线主打晚高峰 4K，并内置 Emby 影视库，追剧党的省心之选。
-- 🎬 **[红杏云 HongXing](https://air-rem.github.io/hongxing/)** — 糖果云的母站，公网隧道中转 + 全流媒体解锁，还赠送 Emby 影视库，20 元 200G 的高性价比之选。
+- 🎬 **[糖果云 CandyCloud](https://air-rem.github.io/candycloud/)** — 影视追剧旗舰：极速定制 IEPL 专线 + 全档赠送 EMBY 私人影视库，设备不限、支持家庭共享，¥18/100G 起低门槛入手
+- 🎬 **[红杏云 HongXing](https://air-rem.github.io/hongxing/)** — IEPL 专线 + 赠 EMBY 影视库，大流量还便宜：月付 ¥80 就有 1200G，独有不限时大流量买断（3000G ¥388 / 6000G ¥688），追剧囤量两不误
 - 🎬 **[渔云 YuYun](https://air-rem.github.io/yuyun/)** — IEPL 专线起步的新锐机场，主打稳定运营与多端定制，全套餐赠送 Emby 影视库，追剧观影一步到位。
 - 🎬 **[好鸭 NiceDuck](https://air-rem.github.io/niceduck/)** — 2023 年多入口中转机场，套餐自带 Emby 私人影视库
 - 🎬 **[69云 69Yun](https://air-rem.github.io/yun69/)** — 2022 年专线中转机场，节点覆盖广（含冷门地区），并提供 Emby 影视库，装上客户端登录即看，追剧党友好。
@@ -600,11 +600,11 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 | 机场 | 线路类型 | 主要协议 | 解锁 | 起步价 | 最适合 |
 | --- | --- | --- | --- | --- | --- |
-| [Mitce](https://air-rem.github.io/mitce/) | 直连（部分 BGP 中转） | VLESS+Reality · Hysteria2 | Netflix · Disney+ · ChatGPT | ¥4 / 100G | 性价比 / 新手 |
+| [Mitce](https://air-rem.github.io/mitce/) | 直连（部分 BGP 中转） | VLESS+Reality · Hysteria2 | Netflix · Disney+ · ChatGPT | ¥4 / 月 100G | 性价比 / 新手主推 |
 | [西部数据](https://air-rem.github.io/westdata/) | IEPL/IPLC 全专线 | Trojan | Netflix · Disney+ · ChatGPT | ¥17 / 200G | 稳定专线党 |
 | [守候](https://air-rem.github.io/shouhou/) | 公网中转 + IPLC 专线 | Shadowsocks | Netflix · Disney+ · ChatGPT · Emby 影视库 | ¥15 / 月 | 稳健老用户 / Emby 影音 |
-| [糖果云](https://air-rem.github.io/candycloud/) | IEPL 专线 | Shadowsocks · V2Ray | Netflix · ChatGPT · Emby 影视库 | ¥28 / 100G | 影视 / 追剧 |
-| [红杏云](https://air-rem.github.io/hongxing/) | 公网隧道中转 | Trojan · Hysteria2 | Netflix · Disney+ · ChatGPT · Emby 影视库 | ¥20 / 200G | 流媒体 / 性价比 |
+| [糖果云](https://air-rem.github.io/candycloud/) | IEPL 专线 | Shadowsocks · V2Ray | Netflix · Disney+ · ChatGPT · Emby 影视库 | ¥18 / 月 100G | 影视追剧旗舰 |
+| [红杏云](https://air-rem.github.io/hongxing/) | IEPL 专线 | Trojan · Hysteria2 | Netflix · Disney+ · ChatGPT · Emby 影视库 | ¥20 / 月 200G | 流媒体 / 大流量性价比 |
 | [自由猫](https://air-rem.github.io/freecat/) | MPTCP 多路径中转 | Shadowsocks · Trojan · VLESS | Netflix · Disney+ · ChatGPT | ¥6 / 月 | 日常主力 |
 | [淘气兔](https://air-rem.github.io/taoqitu/) | 中转 + IEPL 专线 | Shadowsocks · Trojan | Netflix · ChatGPT | ¥7.8 / 月 | 联通移动用户 |
 | [渔云](https://air-rem.github.io/yuyun/) | IEPL 专线 + 中转 | VLESS · Hysteria2 | Netflix · Disney+ · ChatGPT · Emby 影视库 | ¥9 / 月 | 长期稳定 / Emby 影音 |
@@ -634,11 +634,11 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 
 ## 30 秒教你怎么选机场
 
-- **便宜稳定，日常刷视频 + 挂 AI** → 选 [Mitce](https://air-rem.github.io/mitce/)
+- **极致性价比，日常刷视频 + 挂 AI + 不限流量敞开用** → 选 [Mitce](https://air-rem.github.io/mitce/)
 - **要低延迟专线、常年稳定不掉线** → 选 [西部数据](https://air-rem.github.io/westdata/)
 - **运营多年可长期用，还想要 Emby 影视库追剧** → 选 [守候](https://air-rem.github.io/shouhou/)
-- **重度追剧党，想要 Emby 影视库** → 选 [糖果云](https://air-rem.github.io/candycloud/)
-- **便宜大流量看剧 + 全流媒体解锁** → 选 [红杏云](https://air-rem.github.io/hongxing/)
+- **重度追剧党，想要 IEPL 专线 + EMBY 影视库、家庭共享** → 选 [糖果云](https://air-rem.github.io/candycloud/)
+- **既要追剧又要囤大流量的性价比党** → 选 [红杏云](https://air-rem.github.io/hongxing/)
 - **晚高峰更稳的日常主力机场** → 选 [自由猫](https://air-rem.github.io/freecat/)
 - **联通 / 移动用户要中转+专线混合** → 选 [淘气兔](https://air-rem.github.io/taoqitu/)
 - **要 IEPL 专线，还想套餐白送 Emby 影视库** → 选 [渔云](https://air-rem.github.io/yuyun/)
