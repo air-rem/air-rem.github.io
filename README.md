@@ -245,16 +245,16 @@ English: Independent **proxy / VPN-like subscription (机场)** reviews and rank
 
 <img src="assets/og/kuailei.png" alt="快雷GO Kuailei GO 机场评测与推荐 · 科学上网" width="720">
 
-> 2025 新开的专线机场，AnyTLS + VLESS，IEPL 专线主打晚高峰速度，兼具直连线路。
+> 海外专线加速、最高 1000Mbps，全流媒体解锁；设备档从 2 台到 100 台全覆盖，个人 / 家庭 / 工作室都有对应包，另有不限时流量包可单买
 
 - **线路类型**：IEPL 专线 + 直连
 - **主要协议**：AnyTLS · VLESS
 - **流媒体解锁**：Netflix · Disney+ · ChatGPT · TikTok
 - **覆盖地区**：香港 · 日本 · 台湾 · 美国 · 新加坡 · 马来西亚 等
-- **起步价**：¥15 起 / 月 110G（月付 / 季付 / 半年 / 年付）
-- **最适合**：晚高峰 / 速度
+- **起步价**：¥20 起 / 月 150G（月付(订单日重置) / 不限时流量包）
+- **最适合**：专线加速 · 全设备档
 
-快雷GO（也写作快雷狗）是 2025 年新开的机场，采用 AnyTLS + VLESS，走 IEPL 专线并搭配直连，落地覆盖港日台美新马等地。多家测评把它归为「晚高峰速度较快」的一档，套餐档位清晰、从 110G 到 500G 都有。作为新机场，建议先月付小档验证稳定性，别一上来大额年付，并常备第二家互为容灾。
+快雷GO（也写作快雷狗）主打「快」：全线海外专线、速度阶梯清晰（200→500→1000Mbps），tiktok/ins/油管/奈飞/迪士尼/ChatGPT 一网打尽。最实用的是设备档位——小包 2 台、中包 3 台、大包 10 台、旗舰包 100 台，从个人一路覆盖到工作室 / 团队；还有 300G/1000G 不限时流量包可单独买来防失联。作为 2025 新站，建议先月付小档验证晚高峰稳定性，别一上来大额年付。
 
 **完整评测与优惠信息 → [快雷GO Kuailei GO 机场评测](https://air-rem.github.io/kuailei/)**
 
@@ -611,7 +611,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 | [神龙](https://air-rem.github.io/shenlong/) | 全线 IEPL 专线 | Shadowsocks · VMess · Trojan | Netflix · Disney+ · ChatGPT | ¥10 / 月 100G | IEPL 专线 · 永久流量 |
 | [好鸭](https://air-rem.github.io/niceduck/) | 多入口隧道中转 | Shadowsocks | Netflix · Disney+ · YouTube · ChatGPT · Emby 影视库 | ¥12 / 月 | 追剧兼解锁 |
 | [流量光](https://air-rem.github.io/llguang/) | BGP 中转 + 专线可选 | Trojan · Shadowsocks | Netflix · Disney+ · HBO · Spotify · TikTok · ChatGPT | ¥9.9 / 月 | 流媒体重度 |
-| [快雷GO](https://air-rem.github.io/kuailei/) | IEPL 专线 + 直连 | AnyTLS · VLESS | Netflix · Disney+ · ChatGPT · TikTok | ¥15 / 月 110G | 晚高峰 / 速度 |
+| [快雷GO](https://air-rem.github.io/kuailei/) | IEPL 专线 + 直连 | AnyTLS · VLESS | Netflix · Disney+ · ChatGPT · TikTok | ¥20 / 月 150G | 专线加速 · 全设备档 |
 | [NiceCloud](https://air-rem.github.io/nicecloud/) | 公网中转隧道 | Shadowsocks · SSR | Netflix · Disney+ · ChatGPT · TikTok | ¥12 / 月起 | 性价比 / 灵活流量 |
 | [OuO](https://air-rem.github.io/ouo/) | 公网隧道中转 | Shadowsocks | Netflix · Disney+ · YouTube · TikTok · ChatGPT | ¥10 / 月 | 多地区解锁 |
 | [69云](https://air-rem.github.io/yun69/) | 专线中转 | Shadowsocks · VMess | Netflix · Disney+ · HBO · ChatGPT · Emby 影视库 | ¥9.9 / 月 | 冷门地区 / Emby 影音 |
@@ -645,7 +645,7 @@ KTM Cloud 是 2023 年上线的中转机场，采用 VMess + Hysteria2 双协议
 - **想要 IEPL 专线的稳定与速度，又想要便宜的永久流量** → 选 [神龙](https://air-rem.github.io/shenlong/)
 - **追剧 + 解锁，还想要 Emby** → 选 [好鸭](https://air-rem.github.io/niceduck/)
 - **Netflix/Disney+/HBO 等全解锁重度用户** → 选 [流量光](https://air-rem.github.io/llguang/)
-- **冲晚高峰速度、接受新站先月付** → 选 [快雷GO](https://air-rem.github.io/kuailei/)
+- **冲海外专线速度、个人到团队多设备** → 选 [快雷GO](https://air-rem.github.io/kuailei/)
 - **按量 / 不限时灵活用流量** → 选 [NiceCloud](https://air-rem.github.io/nicecloud/)
 
 更多场景与全部收录见线上 **[机场大全](https://air-rem.github.io/airports/)**。
