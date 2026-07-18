@@ -90,8 +90,21 @@ def footer_html():
 SKIP_STYLE = ('<style>.skip{position:absolute;left:-999px;top:0;z-index:100;background:var(--amber);'
               'color:#241300;padding:10px 16px;border-radius:0 0 10px 0;font-weight:600}.skip:focus{left:0}</style>')
 
+# 多域自认领：canonical/hreflang 已相对化（任何访问域名自动解析成本域）。
+# 下面这段在浏览器/搜索引擎渲染时，把 og/twitter/JSON-LD 里的主域改写成“当前访问域名”，
+# 让每个镜像域名都被独立收录；在主域上执行为 no-op，对 GitHub Pages 无影响。
+ORIGIN_JS = (
+    '<script>(function(){var o=location.origin,P=%s;if(o===P)return;'
+    'document.querySelectorAll(\'meta[property="og:url"],meta[property="og:image"],meta[name="twitter:image"]\')'
+    '.forEach(function(m){var c=m.getAttribute("content");if(c)m.setAttribute("content",c.split(P).join(o));});'
+    'var s=document.querySelector(\'script[type="application/ld+json"]\');'
+    'if(s)s.textContent=s.textContent.split(P).join(o);})();</script>'
+) % json.dumps(B)
+
 def head(title, desc, canonical, keywords, og_image, jsonld, og_type="article"):
     j = json.dumps(jsonld, ensure_ascii=False, separators=(",", ":"))
+    cpath = canonical[len(B):] if canonical.startswith(B) else canonical  # 相对路径：每个访问域名自动自认领
+    cpath = cpath or "/"
     return """<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -127,13 +140,14 @@ def head(title, desc, canonical, keywords, og_image, jsonld, og_type="article"):
 <link rel="stylesheet" href="/assets/style.css">
 %s
 <script type="application/ld+json">%s</script>
+%s
 </head>
 <body>
 <a class="skip" href="#main">跳到主内容</a>
 <div class="bg-grid" aria-hidden="true"></div>
-""" % (esc(title), esc(desc), esc(keywords), canonical, canonical, canonical, og_type,
+""" % (esc(title), esc(desc), esc(keywords), cpath, cpath, cpath, og_type,
        esc(title), esc(desc), canonical, og_image, esc(title), esc(desc), og_image,
-       SKIP_STYLE, j)
+       SKIP_STYLE, j, ORIGIN_JS)
 
 SCRIPTS = '<script src="/assets/config.js"></script>\n<script src="/assets/app.js" defer></script>\n</body>\n</html>\n'
 
