@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# wrangler 本地部署缓存，勿提交
+.wrangler/
+Thumbs.db
