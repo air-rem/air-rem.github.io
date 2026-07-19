@@ -39,7 +39,8 @@ window.SITE = {
     "tapcloud": "https://s.rtxk.us/s/5qv7zcn",
     "lvpn": "https://s.rtxk.us/s/bnwjgrx",
     "shunchang": "https://t.rtxk.us/t/k2pajrb",
-    "tifa": "https://i.rtxk.us/i/muxcy6r"
+    "tifa": "https://i.rtxk.us/i/muxcy6r",
+    "wugui": "https://s.rtxk.us/s/5krgzu4"
   },
   code: {
     "mitce": "like20",
@@ -76,7 +77,8 @@ window.SITE = {
     "tapcloud": "xiaoqi",
     "lvpn": "",
     "shunchang": "",
-    "tifa": ""
+    "tifa": "",
+    "wugui": ""
   }
 };
 
