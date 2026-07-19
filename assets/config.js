@@ -38,7 +38,8 @@ window.SITE = {
     "ktmcloud": "https://i.rtxk.us/i/fs2n9ra",
     "tapcloud": "https://s.rtxk.us/s/5qv7zcn",
     "lvpn": "https://s.rtxk.us/s/bnwjgrx",
-    "shunchang": "https://t.rtxk.us/t/k2pajrb"
+    "shunchang": "https://t.rtxk.us/t/k2pajrb",
+    "tifa": "https://i.rtxk.us/i/muxcy6r"
   },
   code: {
     "mitce": "like20",
@@ -74,7 +75,8 @@ window.SITE = {
     "ktmcloud": "",
     "tapcloud": "xiaoqi",
     "lvpn": "",
-    "shunchang": ""
+    "shunchang": "",
+    "tifa": ""
   }
 };
 
