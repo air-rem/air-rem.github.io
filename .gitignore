@@ -5,3 +5,4 @@ __pycache__/
 # wrangler 本地部署缓存，勿提交
 .wrangler/
 Thumbs.db
+_gen_*.py
