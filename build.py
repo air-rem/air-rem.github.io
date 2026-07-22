@@ -363,7 +363,7 @@ def render_detail(a):
         % (" open" if i == 0 else "", esc(q["q"]), esc(q["a"])) for i, q in enumerate(faq_items)
     ) + '</div>'
 
-    prose = hd_rail_html() + "\n".join(body) + plans_html + pc_html + fit_html + howto_html + faq_html
+    prose = "\n".join(body) + plans_html + pc_html + fit_html + howto_html + faq_html
     toc_html = '<aside class="toc"><div class="lb">本页目录</div>' + "".join(toc) + '</aside>'
 
     # jsonld
@@ -417,7 +417,7 @@ def render_detail(a):
     out += ai_banner_html()
     out += '</section>'
     # doc
-    out += '<section class="section wrap"><div class="doc">%s<div class="prose">%s</div></div></section>' % (toc_html, prose)
+    out += '<section class="section wrap"><div class="doc">%s<div class="prose">%s</div>%s</div></section>' % (toc_html, prose, hd_rail_html())
     # AI 订阅指南引流专区（姊妹站）
     out += ai_promo_html()
     # cta band
