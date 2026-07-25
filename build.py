@@ -851,6 +851,200 @@ def render_readme():
     L.append("")
     return "\n".join(L) + "\n"
 
+def render_readme_guide():
+    """air-rem 差异化 README：决策 / 避坑 / 评测方法论视角（区别于 air-xvc 的全量榜单版）。"""
+    A = B
+    n = len(AIRPORTS)
+    featured = [a for a in AIRPORTS if a.get("featured")]
+    picks = featured[:8] if featured else AIRPORTS[:8]
+    L = []
+
+    L.append('<p align="center">')
+    L.append('<img src="assets/og.png" alt="机场怎么选 2026 · 科学上网机场评测方法论与避坑指南 · AIRREM 领航" width="820">')
+    L.append("</p>")
+    L.append("")
+    L.append("# 机场怎么选？2026 科学上网机场评测方法论与避坑指南 · AIRREM 领航")
+    L.append("")
+    L.append(
+        "**AIRREM 领航** 不是又一份返佣榜单。我们把 **怎么判断一家机场值不值、怎么避开跑路与虚标、怎么按场景选** "
+        "的方法开源出来，帮你在 **%d 家科学上网机场**（代理订阅服务）里 **自己做决定**，而不是被广告牵着走。" % n
+    )
+    L.append("")
+    L.append(
+        "在线站点：**[%s](%s/)** ｜ 本仓库：**[air-rem/air-rem.github.io](https://github.com/air-rem/air-rem.github.io)** ｜ 数据更新：%s"
+        % (A.replace("https://", ""), A, UPDATED)
+    )
+    L.append("")
+    L.append("> 想直接看全部 %d 家的逐条评测与对比表？→ **[机场大全](%s/airports/)**。本页专讲 **怎么选、怎么避坑**。" % (n, A))
+    L.append("")
+    L.append("---")
+    L.append("")
+
+    L.append("## 目录")
+    L.append("")
+    L.append("- [为什么是方法论，而不是又一份榜单](#为什么是方法论而不是又一份榜单)")
+    L.append("- [30 秒场景决策：你是哪种人](#30-秒场景决策你是哪种人)")
+    L.append("- [评测方法论：怎么判断一家机场值不值](#评测方法论怎么判断一家机场值不值)")
+    L.append("- [选机场避坑清单（新手必读）](#选机场避坑清单新手必读)")
+    L.append("- [编辑精选 TOP 速览](#编辑精选-top-速览)")
+    L.append("- [垂直专题：Emby / AI / 专线](#垂直专题emby--ai--专线)")
+    L.append("- [常见问题 FAQ](#常见问题-faq)")
+    L.append("- [相关搜索词](#相关搜索词)")
+    L.append("- [免责声明](#免责声明)")
+    L.append("")
+    L.append("---")
+    L.append("")
+
+    L.append("## 为什么是方法论，而不是又一份榜单")
+    L.append("")
+    L.append(
+        "搜「**机场推荐**」「**哪家机场好**」，你会刷到无数张「TOP 10 榜单」——但它们大多是 **返佣排序**，"
+        "换个站又是另一套名次。真正能让你少花钱少踩坑的，是 **一套自己能复用的判断标准**："
+        "看懂线路真假、带宽虚不虚、晚高峰稳不稳、会不会跑路。"
+    )
+    L.append("")
+    L.append("所以本仓库反过来做：**先给判断方法与避坑清单，再给精选与对比**。全部 %d 家的逐条数据放在 [机场大全](%s/airports/)，本页只留最该先看的东西。" % (n, A))
+    L.append("")
+    L.append("---")
+    L.append("")
+
+    L.append("## 30 秒场景决策：你是哪种人")
+    L.append("")
+    L.append("对号入座，直接跳到对应的机场评测页：")
+    L.append("")
+    for a in featured:
+        if a.get("scene"):
+            L.append("- **%s** → [%s](%s/%s/)" % (a["scene"], a["name"], A, a["slug"]))
+    L.append("")
+    L.append("拿不准就先看综合最稳的那家，**月付试水几十块**，合适再续。完整场景对照见 **[机场大全](%s/airports/)**。" % A)
+    L.append("")
+    L.append("---")
+    L.append("")
+
+    L.append("## 评测方法论：怎么判断一家机场值不值")
+    L.append("")
+    L.append("下面 5 条是我们看一家机场的固定动作，你自己也能照着验：")
+    L.append("")
+    L.append("1. **线路真假**：号称 **IEPL / IPLC 专线** 的，看晚高峰（20:00–23:00）是否仍低延迟不掉速。真专线晚高峰几乎不波动；假专线一到高峰就卡，多半是普通中转套壳。")
+    L.append("2. **带宽虚标**：标 **5000M / 不限速** 别全信。多节点实测峰值，和宣传差一个量级的，基本是虚标。")
+    L.append("3. **解锁真实性**：Netflix / Disney+ / ChatGPT / Emby 解锁要 **逐个节点试**，别信一句「全解锁」。尤其 AI 站点，很多机场能连不能用（风控 IP）。")
+    L.append("4. **跑路信号**：无限低价年付、疯狂发卡、群里禁言删评、频繁换域名——出现两条以上就别压大额年付。")
+    L.append("5. **稳定性**：优先运营时间长、有稳定客服与公告的老牌机场；新站先小档试水。")
+    L.append("")
+    L.append("> 我们按这套标准整理了精选与对比，但更希望你 **带着这套标准自己核对**——这也是本仓库和普通返佣榜单最大的区别。")
+    L.append("")
+    L.append("---")
+    L.append("")
+
+    L.append("## 选机场避坑清单（新手必读）")
+    L.append("")
+    L.append("- ✅ **先月付 / 小流量**验证晚高峰与解锁，别一上来就大额年付。")
+    L.append("- ✅ **备用 2–3 家**互为容灾，任何单一机场都可能跑路或被墙。")
+    L.append("- ✅ **协议对上客户端**：含 **Hysteria2 / Reality** 的机场，用 Hiddify / v2rayN / Karing 等支持的客户端，否则导入报错。")
+    L.append("- ✅ **优惠码以官网为准**，第三方页面的码可能过期；返佣链接不加价，但价格随官网浮动。")
+    L.append("- ⛔ 不迷信「终身」「无限」；不把所有钱押一家；不下载来路不明的「破解客户端」。")
+    L.append("")
+    L.append("客户端选择：Windows → Clash Verge / v2rayN；macOS → Clash Verge；Android → Hiddify / v2rayNG；iOS → Shadowrocket。")
+    L.append("")
+    L.append("---")
+    L.append("")
+
+    L.append("## 编辑精选 TOP 速览")
+    L.append("")
+    L.append("按上面的方法论筛过、值得优先试的几家（**一句话定位 + 直达评测**）。完整 %d 家见 [机场大全](%s/airports/)：" % (n, A))
+    L.append("")
+    L.append("| 机场 | 线路 | 最适合 | 起步价 | 评测 |")
+    L.append("| --- | --- | --- | --- | --- |")
+    for a in picks:
+        title = a["name"] if a["en"] == a["name"] else "%s %s" % (a["name"], a["en"])
+        L.append("| **%s** | %s | %s | %s %s | [详情](%s/%s/) |" % (
+            title, a["type"], a["best_for"], a["price_from"], a["price_unit"], A, a["slug"]))
+    L.append("")
+    L.append("> 这里 **只列精选**、不堆全量榜单——把逐条数据留给站点，避免你在 GitHub 上翻长表。完整对比表：**[机场大全](%s/airports/)**。" % A)
+    L.append("")
+    L.append("---")
+    L.append("")
+
+    L.append("## 垂直专题：Emby / AI / 专线")
+    L.append("")
+    emby_list = [a for a in AIRPORTS if a.get("emby")]
+    if emby_list:
+        embys = "、".join("[%s](%s/%s/)" % (a["name"], A, a["slug"]) for a in emby_list[:8])
+        L.append("- 🎬 **Emby 影音机场**：内置 / 赠送 Emby 私人影视库，装客户端登录即看，等于自带私人奈飞。代表：%s 等。" % embys)
+    L.append("- 🤖 **AI 优化机场**：稳定连 **ChatGPT / Claude / Gemini** 不报错、少风控，适合重度 AI 用户，认准 IP 干净、专线优先的机场。")
+    L.append("- 🛰️ **IEPL / IPLC 专线机场**：晚高峰追剧、跨境办公、游戏低延迟首选；认准 **真专线**（见上文方法论第 1 条）。")
+    L.append("")
+    L.append("全部分类与逐条评测见 **[机场大全](%s/airports/)**。" % A)
+    L.append("")
+    L.append("---")
+    L.append("")
+
+    L.append("## 常见问题 FAQ")
+    L.append("")
+    L.append("### 怎么识别「假 IEPL / 假专线」？")
+    L.append("")
+    L.append("看晚高峰。真 IEPL/IPLC 专线在 20:00–23:00 延迟和速度几乎不波动；一到高峰就卡顿、丢包、延迟翻倍的，大概率是普通中转套「专线」名头。下单前先买月付实测这个时段。")
+    L.append("")
+    L.append("### 标称「5000M 带宽 / 不限速」是真的吗？")
+    L.append("")
+    L.append("多为营销话术。实际体验取决于线路质量与高峰负载，而非标称峰值。多节点实测实际峰值，和宣传差一个量级就是虚标。")
+    L.append("")
+    L.append("### 晚高峰卡，是机场问题还是我本地问题？")
+    L.append("")
+    L.append("先换 2–3 个节点、换协议试；再用手机流量对比。若换节点 / 网络仍卡，多半是机场高峰负载；若只在你家宽带卡，可能是本地 QoS 或 DNS。这也是要 **备用 2–3 家** 的原因。")
+    L.append("")
+    L.append("### 月付还是年付？")
+    L.append("")
+    L.append("新机场、没验证过的一律 **月付试水**；只有自己实测过晚高峰、解锁、稳定性都满意的老牌机场，才考虑季付 / 年付。别被「年付骨折价」冲昏头，跑路了一分钱要不回。")
+    L.append("")
+    L.append("### 本仓库和官方站是什么关系？")
+    L.append("")
+    L.append(
+        "本仓库与 [%s](%s/) 是 **第三方信息与推荐平台**，非任何机场官方。页面可能含推广 / 返佣链接，"
+        "你通过链接注册或购买时我们可能获得佣金，**不会增加你的成本**。" % (A.replace("https://", ""), A)
+    )
+    L.append("")
+    L.append("---")
+    L.append("")
+
+    L.append("## 延伸阅读")
+    L.append("")
+    L.append("- 机场连上了、**AI 却打不开或老被封号**？→ [花渡攻略博客](%s)（实用避坑教程）" % BLOG)
+    L.append("- 懒得自己折腾账号，想 **直接买 ChatGPT / Claude / Gemini 成品号**？→ [AI 订阅指南](%s)" % AI_GUIDE)
+    L.append("")
+    L.append("---")
+    L.append("")
+
+    L.append("## 相关搜索词")
+    L.append("")
+    L.append(
+        "**机场怎么选**、**机场推荐**、**机场评测**、**科学上网机场**、**机场避坑**、**假 IEPL 识别**、"
+        "**机场跑路**、**月付机场**、**稳定机场**、**IEPL 专线机场**、**性价比机场**、**Netflix 解锁机场**、"
+        "**ChatGPT 机场**、**Emby 机场**、**Clash 订阅**、**Hysteria2**、**VLESS Reality**、**2026 机场榜单**。"
+    )
+    L.append("")
+
+    L.append("## 免责声明")
+    L.append("")
+    L.append(
+        "本仓库与站点为第三方信息与推荐平台，非任何机场官方；页面内含推广链接，"
+        "若你通过链接注册或购买，我们可能获得一定佣金，但不会增加你的任何成本。"
+        "各机场的线路、价格、优惠码可能随时变动，请以对应官网实时信息为准。"
+        "代理 / 加密技术的使用需遵守你所在国家或地区的法律法规，本站内容仅供学习与技术研究参考。"
+    )
+    L.append("")
+    L.append("---")
+    L.append("")
+    L.append(
+        "<p align=\"center\">⭐ 觉得这套「怎么选 + 避坑」有用，就给仓库点个 Star<br>"
+        "<a href=\"%s/\">访问机场推荐站</a> · "
+        "<a href=\"https://github.com/air-rem/air-rem.github.io\">GitHub 仓库</a> · "
+        "<a href=\"%s/airports/\">机场大全</a></p>"
+        % (A, A)
+    )
+    L.append("")
+    return "\n".join(L) + "\n"
+
 # ----------------------------------------------------------------------------- main
 def write(path, content):
     full = os.path.join(BASE, path)
@@ -864,7 +1058,7 @@ def main():
         write("%s/index.html" % a["slug"], render_detail(a))
     write("airports/index.html", render_hub())
     write("sitemap.xml", render_sitemap())
-    write("README.md", render_readme())
+    write("README.md", render_readme_guide() if SITE.get("readme_style") == "guide" else render_readme())
     idx_path = os.path.join(BASE, "index.html")
     idx = open(idx_path, encoding="utf-8").read()
     idx = inject(idx, "BOARD", render_board())

@@ -5,7 +5,8 @@
     "name": "AIRREM 领航 · 机场推荐榜",
     "base": "https://air-rem.github.io",
     "tagline": "独立的机场推荐与评测站，帮你按需求快速选对高速稳定的科学上网机场。",
-    "updated": "2026-07"
+    "updated": "2026-07",
+    "readme_style": "guide"
   },
   "airports": [
     {
