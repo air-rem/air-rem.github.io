@@ -26,12 +26,12 @@
 > - **一个密钥全模型**：Claude、GPT、Gemini 共用一把 `sk-` 密钥，省心。
 >
 > ```bash
-> export ANTHROPIC_BASE_URL=https://ai.svtun.cn
+> export ANTHROPIC_BASE_URL=https://你的专属端点
 > export ANTHROPIC_AUTH_TOKEN=sk-你的密钥
 > claude
 > ```
 >
-> OpenAI 兼容客户端填 `https://ai.svtun.cn/v1`；也支持 cc-switch「导入到 CCS」一键导入。
+> OpenAI 兼容客户端填 `https://你的专属端点/v1`；也支持 cc-switch「导入到 CCS」一键导入。
 > 邮箱注册几十秒，**注册即送体验额度** → **[免费注册 Leonis AI](https://i.rtxk.us/i/r37kbkg)** ｜ [cc-switch 接入教程](https://guide.rtxk.us/tutorial/ai-coding/leonis-ai-cc-switch-guide.html)
 
 ---

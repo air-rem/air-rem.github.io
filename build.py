@@ -175,7 +175,7 @@ def hd_home_html():
 #   （短链是否透传参数未验证，加了可能 404）；真实域名只允许出现在「给人复制粘贴进配置」的代码块里，
 #   且必须是纯文本、不得被 <a> 包裹。按钮/卡片可见文字统一用品牌名「Leonis AI」，不写域名。
 LEO_GO = "https://i.rtxk.us/i/r37kbkg"            # 唯一跳转短链：全站所有 CTA / 链接都指这里
-LEO_BASE = "https://ai.svtun.cn"                  # 仅作技术配置值展示（Base URL），绝不做成超链接
+LEO_BASE = "https://你的专属端点"                  # 仅作技术配置值展示（Base URL），绝不做成超链接
 LEO_TUTORIAL = "https://guide.rtxk.us/tutorial/ai-coding/leonis-ai-cc-switch-guide.html"  # 自有站内链，保持原样
 
 # 四大卖点（文案原文照抄物料规范，不得篡改）。图标用内联 SVG：离线可渲染、不依赖字体里的生僻字形。
