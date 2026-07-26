@@ -167,6 +167,150 @@ def hd_home_html():
         '<div class="hd-home-foot"><a class="btn btn-primary btn-lg" href="%s" target="_blank" rel="noopener">进入花渡博客 ↗</a></div>'
         '</section>' % (cols, BLOG))
 
+# ----------------------------------------------------------------------------- Leonis AI 中转站引流（新增第三路）
+# 站内叙事分工：机场卖「连得上」，AI 订阅指南卖「会员怎么买」，花渡博客教「怎么用不踩坑」，
+# Leonis AI 补最后一环——「**用得顺**」：把 Claude / GPT / Gemini / Grok / Antigravity 等 6+ 模型
+# 收进同一个 API 端点，官方 CLI 不改代码、不换客户端，只替换一行 Base URL。与前三路互补不替代。
+# ⚠️ 链接铁律（2026-07-27 变更）：所有「能点的」一律走唯一短链 LEO_GO，纯链接不挂任何 query 参数
+#   （短链是否透传参数未验证，加了可能 404）；真实域名只允许出现在「给人复制粘贴进配置」的代码块里，
+#   且必须是纯文本、不得被 <a> 包裹。按钮/卡片可见文字统一用品牌名「Leonis AI」，不写域名。
+LEO_GO = "https://i.rtxk.us/i/r37kbkg"            # 唯一跳转短链：全站所有 CTA / 链接都指这里
+LEO_BASE = "https://ai.svtun.cn"                  # 仅作技术配置值展示（Base URL），绝不做成超链接
+LEO_TUTORIAL = "https://guide.rtxk.us/tutorial/ai-coding/leonis-ai-cc-switch-guide.html"  # 自有站内链，保持原样
+
+# 四大卖点（文案原文照抄物料规范，不得篡改）。图标用内联 SVG：离线可渲染、不依赖字体里的生僻字形。
+LEO_FEATS = [
+    ('<path d="M4 17l5-5-5-5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.5 18.5h7.5" stroke-linecap="round"/>',
+     "原生工具直连", "官方 CLI 直接用，不需要额外插件或魔改。"),
+    ('<path d="M3 9.5c3-4.5 6 4.5 9 0s6-4.5 9 0M3 16c3-4.5 6 4.5 9 0s6-4.5 9 0" stroke-linecap="round"/>',
+     "全程流式不缓冲", "长回答边生成边吐字，不会卡到最后一次性蹦出来。"),
+    ('<path d="M12 3l9 4.6-9 4.6-9-4.6L12 3z" stroke-linejoin="round"/><path d="M3 12.4l9 4.6 9-4.6M3 16.8l9 4.6 9-4.6" stroke-linecap="round" stroke-linejoin="round"/>',
+     "多账号池调度", "后端多号轮询，单号被限流时自动顶上，稳定性更好。"),
+    ('<circle cx="8" cy="12" r="4"/><path d="M12 12h9M17.5 12v3.4M20.5 12v2.2" stroke-linecap="round"/>',
+     "一个密钥全模型", "Claude、GPT、Gemini 共用一把 sk- 密钥，省心。"),
+]
+
+def _leo_svg(path, size=19):
+    return ('<svg viewBox="0 0 24 24" width="%d" height="%d" fill="none" stroke="currentColor" '
+            'stroke-width="1.7" aria-hidden="true">%s</svg>') % (size, size, path)
+
+def leo_topbar_html():
+    # P2 顶部通栏：静态流内（滚动即离场，不做常驻 fixed 打扰），× 关闭写 leonis_bar_dismiss 7 天。
+    # 紧跟其后的内联脚本在首帧前决定显隐——避免「先闪一下再消失」的抖动（app.js 是 defer，来不及）。
+    return (
+        '<div class="leo-topbar" id="leo-topbar" hidden>'
+        '<div class="leo-topbar-in">'
+        '<a class="leo-tb-link" href="%s" target="_blank" rel="noopener sponsored">'
+        '<span class="leo-lion" aria-hidden="true">🦁</span>'
+        '<span class="leo-tb-txt"><b>机场负责连上，AI 负责干活</b>'
+        '<span class="leo-tb-sub">Leonis AI 中转站 · Claude / GPT / Gemini 一个密钥全打通，只换一行 Base URL</span>'
+        '</span><span class="leo-tb-cta">免费注册 ↗</span></a>'
+        '<button class="leo-tb-x" type="button" data-leo-bar-close '
+        'title="关闭，7 天内不再显示" aria-label="关闭这条推广，7 天内不再显示">×</button>'
+        '</div></div>'
+        '<script>(function(){try{var t=+localStorage.getItem("leonis_bar_dismiss")||0;'
+        'if(Date.now()-t>6048e5){var e=document.getElementById("leo-topbar");if(e)e.hidden=false;}}'
+        'catch(e){}})();</script>'
+    ) % LEO_GO
+
+def leo_home_html():
+    # P1 首页 / 机场大全原生区块：标题 + 4 张卖点卡 + 接入代码块 + 主 CTA。
+    cards = "".join(
+        '<div class="leo-card"><span class="leo-ic">%s</span><h3>%s</h3><p>%s</p></div>'
+        % (_leo_svg(p), esc(t), esc(d)) for (p, t, d) in LEO_FEATS)
+    return (
+        '<section class="section wrap leo-home" id="leonis" aria-label="Leonis AI 中转站推广">'
+        '<div class="leo-shell">'
+        '<div class="leo-head center">'
+        '<span class="eyebrow center">🦁 Leonis AI 中转站</span>'
+        '<h2>机场负责连上，<span class="grad-text">AI 负责干活</span></h2>'
+        '<p>节点买好了，却还在 Claude Code、Codex CLI、Cherry Studio 之间反复改环境变量、换 Base URL、粘不同的密钥？'
+        'Leonis AI 把 <b>Claude、GPT、Gemini、Grok、Antigravity 等 6+ 模型</b> 统一成同一个 API 端点——'
+        '<b>不改代码、不换客户端，只替换一行 Base URL</b>。</p></div>'
+        '<div class="leo-grid">%s</div>'
+        '<div class="leo-try">'
+        '<div class="leo-try-head"><span class="leo-try-lb">Claude Code 接入示例</span>'
+        '<button class="leo-copy" type="button" data-leo-copy>复制</button></div>'
+        '<pre class="leo-code"><code>export ANTHROPIC_BASE_URL=' + LEO_BASE + '\n'
+        'export ANTHROPIC_AUTH_TOKEN=sk-你的密钥\nclaude</code></pre>'
+        '<p class="leo-note">OpenAI 兼容客户端（Cherry Studio / NextChat / OpenAI SDK）填 '
+        '<code>' + LEO_BASE + '/v1</code>；用 cc-switch 的话，控制台点「导入到 CCS」一键带走配置。</p>'
+        '</div>'
+        '<div class="leo-foot">'
+        '<div class="leo-foot-txt"><b>邮箱注册几十秒，注册即送体验额度。</b>'
+        '控制台能看余额、今日请求、消费与 Token 用量，密钥还能单独设额度 / IP / 速率 / 有效期。</div>'
+        '<div class="leo-btns">'
+        '<a class="btn leo-btn btn-lg" href="%s" target="_blank" rel="noopener sponsored">免费注册领体验额度 ↗</a>'
+        '<a class="btn btn-ghost" href="%s" target="_blank" rel="noopener sponsored">看接入教程 ↗</a>'
+        '</div></div></div></section>'
+    ) % (cards, LEO_GO, LEO_TUTORIAL)
+
+def leo_banner_html():
+    # P4 详情页正文内嵌钩子条：紧接「新手上手：4 步开用」之后 —— 用户刚把节点跑通，正是接 AI 工具的当口。
+    return (
+        '<a class="leo-banner" href="%s" target="_blank" rel="noopener sponsored" '
+        'aria-label="Leonis AI 中转站：一个端点，抵达所有模型">'
+        '<span class="leo-lion lg" aria-hidden="true">🦁</span>'
+        '<span class="leo-banner-txt"><b>节点连上了，AI 工具还在各处改 Base URL？</b>'
+        'Leonis AI 中转站把 Claude / GPT / Gemini 等 6+ 模型收进一个端点，一把 <code>sk-</code> 密钥全打通</span>'
+        '<span class="leo-banner-cta">一个端点，抵达所有模型 ↗</span></a>'
+    ) % LEO_GO
+
+def leo_dock_html(with_hd=False):
+    # P3 悬浮窗：延迟 3s 现身（不抢首屏），× 写 leonis_dismiss 7 天。
+    # 与花渡 .hd-dock 的共存策略 = 物理分区 + 互斥展开，详见 style.css 中 .leo-dock 段注释。
+    # with_hd=True 表示本页同时挂了花渡 dock（仅详情页），CSS 据此为 Leonis 让位。
+    items = "".join('<li>%s<span><b>%s</b>%s</span></li>' % (_leo_svg(p, 15), esc(t), esc(d))
+                    for (p, t, d) in LEO_FEATS)
+    return (
+        '<div class="leo-dock%s">'
+        '<div class="leo-scrim"></div>'
+        '<button class="leo-handle" type="button" aria-expanded="false" aria-label="展开 Leonis AI 中转站介绍">'
+        '<span class="ic" aria-hidden="true">🦁</span><span class="tx">Leonis AI</span></button>'
+        '<aside class="leo-panel" aria-label="Leonis AI 中转站推广">'
+        '<button class="leo-x" type="button" data-leo-dismiss title="关闭，7 天内不再打扰" '
+        'aria-label="关闭，7 天内不再打扰">×</button>'
+        '<span class="leo-eyebrow"><span class="leo-lion" aria-hidden="true">🦁</span><b>Leonis AI 中转站</b></span>'
+        '<p class="leo-hook">机场解决「连得上」，<b>Leonis AI 解决「用得顺」</b>：'
+        'Claude、GPT、Gemini、Grok、Antigravity 等 6+ 模型，一个端点全到齐。</p>'
+        '<ul class="leo-list">%s</ul>'
+        '<div class="leo-kv"><span>已接入</span><code>Claude · GPT · Gemini · Grok · Antigravity</code></div>'
+        '<a class="leo-cta" href="%s" target="_blank" rel="noopener sponsored">免费注册领体验额度 ↗</a>'
+        '<a class="leo-sub" href="%s" target="_blank" rel="noopener sponsored">看 cc-switch 接入教程 ↗</a>'
+        '</aside></div>'
+    ) % ((" with-hd" if with_hd else ""), items, LEO_GO, LEO_TUTORIAL)
+
+def leo_readme_lines():
+    # P6 README 顶部推广区：badge 三连 + 一段推广文字 + 可直接粘贴的环境变量代码块。
+    # GitHub 会剥离 referrer，故 README 内链接不挂 utm（按物料规范）。
+    return [
+        '<p align="center">',
+        '<a href="%s"><img alt="Leonis AI 中转站" src="https://img.shields.io/badge/Leonis_AI-One_Endpoint_All_Models-F7B441?style=for-the-badge&labelColor=9C5606"></a>' % LEO_GO,
+        '<a href="%s"><img alt="免费注册领体验额度" src="https://img.shields.io/badge/Free_Signup-Trial_Credit-EFA22B?style=for-the-badge&labelColor=9C5606"></a>' % LEO_GO,
+        '<a href="%s"><img alt="cc-switch 接入教程" src="https://img.shields.io/badge/Setup_Guide-cc--switch-9C5606?style=for-the-badge"></a>' % LEO_TUTORIAL,
+        '</p>',
+        "",
+        "> ### 🦁 Leonis AI 中转站 —— 一个端点，抵达所有模型",
+        ">",
+        "> 机场解决「**连得上**」，[Leonis AI](%s) 解决「**用得顺**」。把 **Claude、GPT、Gemini、Grok、Antigravity 等 6+ 模型** "
+        "统一成同一个 API 端点：**不改代码、不换客户端，只替换一行 Base URL**。" % LEO_GO,
+        ">",
+        "> - **原生工具直连**：Claude Code、Codex CLI、Cherry Studio、NextChat、OpenAI SDK 官方客户端直接用，不需要额外插件或魔改。",
+        "> - **全程流式不缓冲**：长回答边生成边吐字，不会卡到最后一次性蹦出来。",
+        "> - **多账号池调度**：后端多号轮询，单号被限流时自动顶上，稳定性更好。",
+        "> - **一个密钥全模型**：Claude、GPT、Gemini 共用一把 `sk-` 密钥，省心。",
+        ">",
+        "> ```bash",
+        "> export ANTHROPIC_BASE_URL=%s" % LEO_BASE,
+        "> export ANTHROPIC_AUTH_TOKEN=sk-你的密钥",
+        "> claude",
+        "> ```",
+        ">",
+        "> OpenAI 兼容客户端填 `%s/v1`；也支持 cc-switch「导入到 CCS」一键导入。" % LEO_BASE,
+        "> 邮箱注册几十秒，**注册即送体验额度** → **[免费注册 Leonis AI](%s)** ｜ [cc-switch 接入教程](%s)"
+        % (LEO_GO, LEO_TUTORIAL),
+    ]
+
 # ----------------------------------------------------------------------------- helpers
 def chips(items, cls=""):
     return "".join('<span class="chip %s">%s</span>' % (cls, esc(x)) for x in items)
@@ -201,7 +345,9 @@ def client_hint(a):
 
 # ----------------------------------------------------------------------------- shared chrome
 def nav_html():
+    # Leonis 顶部通栏挂在 sticky 导航之上：静态流内，滚一屏就走，不常驻打扰。
     return (
+leo_topbar_html() +
 '<header class="nav"><nav class="wrap nav-in" aria-label="主导航">'
 '<a class="brand" href="/" aria-label="AIRREM 领航 首页">'
 '<svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">'
@@ -231,7 +377,9 @@ def footer_html():
 '<p style="color:var(--ink-2);font-size:14px;max-width:34ch">' + esc(SITE["tagline"]) + '</p></div>'
 '<div><h5>机场评测</h5>' + links + '</div>'
 '<div><h5>指南</h5><a href="/#guide">怎么选机场</a><a href="/#compare">参数对比</a>'
-'<a href="/airports/">机场大全</a></div></div>'
+'<a href="/airports/">机场大全</a>'
+'<a class="foot-leo" href="' + LEO_GO + '" target="_blank" rel="noopener sponsored">'
+'<span class="leo-lion sm" aria-hidden="true">🦁</span>Leonis AI 中转站 ↗</a></div></div>'
 '<div class="disc"><p><b>免责声明：</b>本站为第三方信息与推荐平台，非任何机场官方；页面内含推广链接，'
 '若你通过链接注册或购买，我们可能获得一定佣金，但<b>不会增加你的任何成本</b>。'
 '各机场的线路、价格、优惠码可能随时变动，请以对应官网实时信息为准。'
@@ -381,7 +529,9 @@ def render_detail(a):
         % (" open" if i == 0 else "", esc(q["q"]), esc(q["a"])) for i, q in enumerate(faq_items)
     ) + '</div>'
 
-    prose = "\n".join(body) + plans_html + pc_html + fit_html + howto_html + faq_html
+    # Leonis 钩子条卡在「新手上手」与「常见问题」之间：读者刚把订阅导入跑通，正是接 AI 工具的当口
+    prose = ("\n".join(body) + plans_html + pc_html + fit_html + howto_html
+             + leo_banner_html() + faq_html)
     toc_html = '<aside class="toc"><div class="lb">本页目录</div>' + "".join(toc) + '</aside>'
 
     # jsonld
@@ -438,6 +588,8 @@ def render_detail(a):
     out += '<section class="section wrap"><div class="doc">%s<div class="prose">%s</div>%s</div></section>' % (toc_html, prose, hd_rail_html())
     # 花渡右缘悬浮件（fixed 定位，DOM 位置不影响；放 .doc 之后确保 .hd-rail 先入 DOM 供 IO 观察）
     out += hd_dock_html()
+    # Leonis 右下角悬浮件；with_hd=True 让 CSS 知道本页有花渡 dock，需要为其让位（见 style.css 分区规则）
+    out += leo_dock_html(with_hd=True)
     # AI 订阅指南引流专区（姊妹站）
     out += ai_promo_html()
     # cta band
@@ -492,11 +644,13 @@ def render_hub():
     out += '<div class="grid-3">%s</div>' % "\n".join(cards)
     out += ('<div style="text-align:center;margin-top:44px"><a class="btn btn-ghost" href="/#guide">还不知道怎么选？看选购指南 →</a></div>')
     out += '</section>'
-    # AI 订阅指南引流专区（姊妹站）
+    # 三路引流按色温排序：AI 订阅（青绿）→ Leonis AI（金铜）→ 花渡（品红），避免相邻区块撞色
     out += ai_promo_html()
+    out += leo_home_html()
     out += hd_home_html()
     out += '</main>'
     out += footer_html()
+    out += leo_dock_html()
     out += SCRIPTS
     return out
 
@@ -630,6 +784,8 @@ def render_readme():
         "精选包括：%s 等。价格与优惠码可能随官网调整，请以各机场官网为准。"
         % top_names
     )
+    L.append("")
+    L += leo_readme_lines()          # P6 README 顶部推广区
     L.append("")
     L.append("---")
     L.append("")
@@ -877,6 +1033,8 @@ def render_readme_guide():
     L.append("")
     L.append("> 想直接看全部 %d 家的逐条评测与对比表？→ **[机场大全](%s/airports/)**。本页专讲 **怎么选、怎么避坑**。" % (n, A))
     L.append("")
+    L += leo_readme_lines()          # P6 README 顶部推广区
+    L.append("")
     L.append("---")
     L.append("")
 
@@ -1011,6 +1169,7 @@ def render_readme_guide():
     L.append("")
     L.append("- 机场连上了、**AI 却打不开或老被封号**？→ [花渡攻略博客](%s)（实用避坑教程）" % BLOG)
     L.append("- 懒得自己折腾账号，想 **直接买 ChatGPT / Claude / Gemini 成品号**？→ [AI 订阅指南](%s)" % AI_GUIDE)
+    L.append("- 在 **Claude Code / Codex CLI** 里写代码，想一把 `sk-` 密钥打通全模型？→ [Leonis AI 中转站](%s)（只替换一行 Base URL）" % LEO_GO)
     L.append("")
     L.append("---")
     L.append("")
@@ -1070,12 +1229,17 @@ def main():
     idx = inject(idx, "COUNT", str(len(AIRPORTS)))
     idx = inject(idx, "AIPROMO", ai_promo_html())
     idx = inject(idx, "HDPROMO", hd_home_html())
+    idx = inject(idx, "LEOBAR", leo_topbar_html())
+    idx = inject(idx, "LEOPROMO", leo_home_html())
+    idx = inject(idx, "LEODOCK", leo_dock_html())
     open(idx_path, "w", encoding="utf-8").write(idx)
     print("  ✓ index.html (injected)")
     # 404 页也注入同一引流专区，保持「全站每页都挂」
     p404 = os.path.join(BASE, "404.html")
     t404 = open(p404, encoding="utf-8").read()
     t404 = inject(t404, "AIPROMO", ai_promo_html())
+    t404 = inject(t404, "LEOBAR", leo_topbar_html())
+    t404 = inject(t404, "LEODOCK", leo_dock_html())
     open(p404, "w", encoding="utf-8").write(t404)
     print("  ✓ 404.html (injected)")
     print("Done.")
