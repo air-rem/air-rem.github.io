@@ -10,30 +10,6 @@
 
 > 想直接看全部 39 家的逐条评测与对比表？→ **[机场大全](https://air-rem.github.io/airports/)**。本页专讲 **怎么选、怎么避坑**。
 
-<p align="center">
-<a href="https://i.rtxk.us/i/r37kbkg"><img alt="Leonis AI 中转站" src="https://img.shields.io/badge/Leonis_AI-One_Endpoint_All_Models-F7B441?style=for-the-badge&labelColor=9C5606"></a>
-<a href="https://i.rtxk.us/i/r37kbkg"><img alt="免费注册领体验额度" src="https://img.shields.io/badge/Free_Signup-Trial_Credit-EFA22B?style=for-the-badge&labelColor=9C5606"></a>
-<a href="https://guide.rtxk.us/tutorial/ai-coding/leonis-ai-cc-switch-guide.html"><img alt="cc-switch 接入教程" src="https://img.shields.io/badge/Setup_Guide-cc--switch-9C5606?style=for-the-badge"></a>
-</p>
-
-> ### 🦁 Leonis AI 中转站 —— 一个端点，抵达所有模型
->
-> 机场解决「**连得上**」，[Leonis AI](https://i.rtxk.us/i/r37kbkg) 解决「**用得顺**」。把 **Claude、GPT、Gemini、Grok、Antigravity 等 6+ 模型** 统一成同一个 API 端点：**不改代码、不换客户端，只替换一行 Base URL**。
->
-> - **原生工具直连**：Claude Code、Codex CLI、Cherry Studio、NextChat、OpenAI SDK 官方客户端直接用，不需要额外插件或魔改。
-> - **全程流式不缓冲**：长回答边生成边吐字，不会卡到最后一次性蹦出来。
-> - **多账号池调度**：后端多号轮询，单号被限流时自动顶上，稳定性更好。
-> - **一个密钥全模型**：Claude、GPT、Gemini 共用一把 `sk-` 密钥，省心。
->
-> ```bash
-> export ANTHROPIC_BASE_URL=https://你的专属端点
-> export ANTHROPIC_AUTH_TOKEN=sk-你的密钥
-> claude
-> ```
->
-> OpenAI 兼容客户端填 `https://你的专属端点/v1`；也支持 cc-switch「导入到 CCS」一键导入。
-> 邮箱注册几十秒，**注册即送体验额度** → **[免费注册 Leonis AI](https://i.rtxk.us/i/r37kbkg)** ｜ [cc-switch 接入教程](https://guide.rtxk.us/tutorial/ai-coding/leonis-ai-cc-switch-guide.html)
-
 ---
 
 ## 目录
@@ -169,7 +145,6 @@
 
 - 机场连上了、**AI 却打不开或老被封号**？→ [花渡攻略博客](https://guide.rtxk.us)（实用避坑教程）
 - 懒得自己折腾账号，想 **直接买 ChatGPT / Claude / Gemini 成品号**？→ [AI 订阅指南](https://555735.xyz)
-- 在 **Claude Code / Codex CLI** 里写代码，想一把 `sk-` 密钥打通全模型？→ [Leonis AI 中转站](https://i.rtxk.us/i/r37kbkg)（只替换一行 Base URL）
 
 ---
 
